@@ -20,7 +20,8 @@ As the build configuration uses Tycho 2.0.0 newer Java versions (e.g. Java 16) m
 ## Running experiments in batches ##
 To simplify the execution of a batch of experiments bash script is contained in the main folder. The script was also used to conduct the experiments of the paper.
 To run 30 evolutionary computations for all configurations of the CRA case, for example, a call to the script would look like:
-** ./experiment-runner.sh "usecases/CRA/target/classes/" "usecases/CRA/configs/" "usecases/CRA/"**
+
+**./experiment-runner.sh "usecases/CRA/target/classes/" "usecases/CRA/configs/" "usecases/CRA/"**
 
 Please be aware that the MDEOptimiser argument specifying the path to the project folder (e.g. **usecases/CRA**) 
 should not contain backwards navigation (e.g., **usescases/../usecases/CRA**) as an Exception is thrown by MDEOptimiser in this case.
