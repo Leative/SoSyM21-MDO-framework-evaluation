@@ -2,8 +2,8 @@
 
 ## Archive files ##
 The 7z archives contain the raw output data of MDEOptimiser. Despite their small size the extracted data needs about a gigabyte for each use case.
-For each evolutionary computation (called batch) a data steps file is provided containing data about the elapsed time, the population and the approximation set of each iteration.
-An outcome file contains a summary including more inforation about the approximation set of the last iteration. 
+For each evolutionary computation (called **batch**) a file **batch-\<batchNumber\>-data-steps.csv** is provided containing data about the elapsed time, the population and the approximation set of each iteration of the batch.
+A file **batch-\<batchNumber\>-outcome.txt** contains a summary including more inforation about the approximation set of the last iteration. 
 For all evolutionary computations performed for a problem instance, the EMF instance models (xmi files) of the approximation sets of the last iterations are available in the main folder of that problem instance.
 
 ## Analysis folder ##
