@@ -1,0 +1,28 @@
+problem{
+	basepath <models/>
+	metamodel <nextReleaseProblem.NextReleaseProblemPackage>
+	model <nrp-model-25-cus-10-imp-50-req-400-sa-4-dep.xmi>
+}
+goal {
+	objective MinimiseCost minimise java { "guidancefunctions.MinimiseCost" }
+	objective MaximiseSatisfaction maximise java { "guidancefunctions.MaximiseSatisfaction" }
+	constraint RespectBudget java { "guidancefunctions.NotExceedingBudget" }
+	constraint MinimiseUnselectedSADependencies java { "guidancefunctions.NoSAsWithUnselectedDependencies" }
+}
+search {
+	mutate using <nrp-mutation.henshin> unit "addArtifactRespectingHierarchyAndBudget"
+	mutate using <nrp-mutation.henshin> unit "removeArtifactRespectingHierarchyAndImportanceForArtifacts"
+}
+solver {
+	optimisation provider moea algorithm NSGAII {
+		population: 100
+		variation: mutation
+		mutation.step: 1
+		mutation.strategy: random
+	}
+	termination {
+		delta: 3
+		iterations: 100
+	}
+	batches 1
+}

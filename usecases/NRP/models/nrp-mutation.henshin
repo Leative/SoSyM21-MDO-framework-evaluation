@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_E-unAH5sEeqx8avg6HaMEw">
+  <imports href="http://model.nrp#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_wY9FwH5_Eeqx8avg6HaMEw" name="addRandomArtifact">
+    <annotations xmi:id="_ZVoG7fGoEeqWiY5PaiE2JQ" key="featureConstraint" value=""/>
+    <annotations xmi:id="_ZVoG7vGoEeqWiY5PaiE2JQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_ZVoG7_GoEeqWiY5PaiE2JQ" key="features" value=""/>
+    <parameters xmi:id="_qWCbsBg7Eeu6or9olyIQMQ" name="total" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_qWDCwBg7Eeu6or9olyIQMQ" name="cost" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_wY_iAH5_Eeqx8avg6HaMEw" name="Lhs">
+      <nodes xmi:id="_2Nmk8H5_Eeqx8avg6HaMEw" name="n" outgoing="_EprM8H6AEeqx8avg6HaMEw _E3j38H6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVnf0PGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_3JEHoH5_Eeqx8avg6HaMEw" name="s" incoming="_EprM8H6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVnf0fGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_YSiaABg7Eeu6or9olyIQMQ" value="total">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_7aQ3EH5_Eeqx8avg6HaMEw" name="a" incoming="_E3j38H6AEeqx8avg6HaMEw" outgoing="_rQpCwBg7Eeu6or9olyIQMQ">
+        <annotations xmi:id="_ZVnf1fGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_jtxuQBg7Eeu6or9olyIQMQ" name="c" incoming="_rQpCwBg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_kurxoBg7Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_EprM8H6AEeqx8avg6HaMEw" source="_2Nmk8H5_Eeqx8avg6HaMEw" target="_3JEHoH5_Eeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVnf1vGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_E3j38H6AEeqx8avg6HaMEw" source="_2Nmk8H5_Eeqx8avg6HaMEw" target="_7aQ3EH5_Eeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVnf1_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_rQpCwBg7Eeu6or9olyIQMQ" source="_7aQ3EH5_Eeqx8avg6HaMEw" target="_jtxuQBg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Hhsi8H6AEeqx8avg6HaMEw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Hhsi8X6AEeqx8avg6HaMEw">
+          <annotations xmi:id="_ZVnf2fGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <conclusion xmi:id="_Hhsi8n6AEeqx8avg6HaMEw">
+            <nodes xmi:id="_Hhsi836AEeqx8avg6HaMEw" name="s" outgoing="_Hhr74H6AEeqx8avg6HaMEw">
+              <annotations xmi:id="_ZVnf2vGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//Solution"/>
+              <attributes xmi:id="_YSiaAhg7Eeu6or9olyIQMQ" value="total">
+                <type href="http://model.nrp#//Solution/totalCosts"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_Hhsi9n6AEeqx8avg6HaMEw" name="sa" incoming="_Hhr74H6AEeqx8avg6HaMEw" outgoing="_rQpCwhg7Eeu6or9olyIQMQ">
+              <annotations xmi:id="_ZVoG4fGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//SoftwareArtifact"/>
+            </nodes>
+            <nodes xmi:id="_jtxuQxg7Eeu6or9olyIQMQ" incoming="_rQpCwhg7Eeu6or9olyIQMQ">
+              <type href="http://model.nrp#//Cost"/>
+              <attributes xmi:id="_kurxohg7Eeu6or9olyIQMQ" value="cost">
+                <type href="http://model.nrp#//Cost/amount"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_Hhr74H6AEeqx8avg6HaMEw" source="_Hhsi836AEeqx8avg6HaMEw" target="_Hhsi9n6AEeqx8avg6HaMEw">
+              <annotations xmi:id="_ZVoG4vGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+            </edges>
+            <edges xmi:id="_rQpCwhg7Eeu6or9olyIQMQ" source="_Hhsi9n6AEeqx8avg6HaMEw" target="_jtxuQxg7Eeu6or9olyIQMQ">
+              <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Hhsi9X6AEeqx8avg6HaMEw" origin="_3JEHoH5_Eeqx8avg6HaMEw" image="_Hhsi836AEeqx8avg6HaMEw"/>
+          <mappings xmi:id="_Hhsi936AEeqx8avg6HaMEw" origin="_7aQ3EH5_Eeqx8avg6HaMEw" image="_Hhsi9n6AEeqx8avg6HaMEw"/>
+          <mappings xmi:id="_jtxuRBg7Eeu6or9olyIQMQ" origin="_jtxuQBg7Eeu6or9olyIQMQ" image="_jtxuQxg7Eeu6or9olyIQMQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_wY_iAX5_Eeqx8avg6HaMEw" name="Rhs">
+      <nodes xmi:id="_2Nmk8X5_Eeqx8avg6HaMEw" name="n" outgoing="_EprM8X6AEeqx8avg6HaMEw _E3j38X6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVoG4_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_3JEHoX5_Eeqx8avg6HaMEw" name="s" incoming="_EprM8X6AEeqx8avg6HaMEw" outgoing="_Hhsi-H6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVoG5PGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_YSiaARg7Eeu6or9olyIQMQ" value="total + cost">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_7aQ3EX5_Eeqx8avg6HaMEw" name="a" incoming="_E3j38X6AEeqx8avg6HaMEw _Hhsi-H6AEeqx8avg6HaMEw" outgoing="_rQpCwRg7Eeu6or9olyIQMQ">
+        <annotations xmi:id="_ZVoG6PGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_jtxuQRg7Eeu6or9olyIQMQ" name="c" incoming="_rQpCwRg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_kurxoRg7Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_EprM8X6AEeqx8avg6HaMEw" source="_2Nmk8X5_Eeqx8avg6HaMEw" target="_3JEHoX5_Eeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVoG6fGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_E3j38X6AEeqx8avg6HaMEw" source="_2Nmk8X5_Eeqx8avg6HaMEw" target="_7aQ3EX5_Eeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVoG6vGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_Hhsi-H6AEeqx8avg6HaMEw" source="_3JEHoX5_Eeqx8avg6HaMEw" target="_7aQ3EX5_Eeqx8avg6HaMEw">
+        <annotations xmi:id="_ZVoG7PGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+      </edges>
+      <edges xmi:id="_rQpCwRg7Eeu6or9olyIQMQ" source="_7aQ3EX5_Eeqx8avg6HaMEw" target="_jtxuQRg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_2Nmk8n5_Eeqx8avg6HaMEw" origin="_2Nmk8H5_Eeqx8avg6HaMEw" image="_2Nmk8X5_Eeqx8avg6HaMEw"/>
+    <mappings xmi:id="_3JEHon5_Eeqx8avg6HaMEw" origin="_3JEHoH5_Eeqx8avg6HaMEw" image="_3JEHoX5_Eeqx8avg6HaMEw"/>
+    <mappings xmi:id="_7aQ3En5_Eeqx8avg6HaMEw" origin="_7aQ3EH5_Eeqx8avg6HaMEw" image="_7aQ3EX5_Eeqx8avg6HaMEw"/>
+    <mappings xmi:id="_jtxuQhg7Eeu6or9olyIQMQ" origin="_jtxuQBg7Eeu6or9olyIQMQ" image="_jtxuQRg7Eeu6or9olyIQMQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_bAkWcH6AEeqx8avg6HaMEw" name="removeRandomArtifact">
+    <annotations xmi:id="_ZwmLs_GoEeqWiY5PaiE2JQ" key="featureConstraint" value=""/>
+    <annotations xmi:id="_ZwmysPGoEeqWiY5PaiE2JQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_ZwmysfGoEeqWiY5PaiE2JQ" key="features" value=""/>
+    <parameters xmi:id="_EVb88Bg8Eeu6or9olyIQMQ" name="total" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_EVb88Rg8Eeu6or9olyIQMQ" name="cost" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_bAmysH6AEeqx8avg6HaMEw" name="Lhs">
+      <nodes xmi:id="_h-UywH6AEeqx8avg6HaMEw" name="n" outgoing="_lRnvgH6AEeqx8avg6HaMEw _lbgrUH6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLoPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_i0N48H6AEeqx8avg6HaMEw" name="s" incoming="_lRnvgH6AEeqx8avg6HaMEw" outgoing="_l8wXMH6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLofGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="__JIQIBg7Eeu6or9olyIQMQ" value="total">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_jhnKcH6AEeqx8avg6HaMEw" name="a" incoming="_lbgrUH6AEeqx8avg6HaMEw _l8wXMH6AEeqx8avg6HaMEw" outgoing="_6T18MBg7Eeu6or9olyIQMQ">
+        <annotations xmi:id="_ZwmLo_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_3Ai_cBg7Eeu6or9olyIQMQ" name="c" incoming="_6T18MBg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_4Ce9kBg7Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_lRnvgH6AEeqx8avg6HaMEw" source="_h-UywH6AEeqx8avg6HaMEw" target="_i0N48H6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLpvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_lbgrUH6AEeqx8avg6HaMEw" source="_h-UywH6AEeqx8avg6HaMEw" target="_jhnKcH6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLp_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_l8wXMH6AEeqx8avg6HaMEw" source="_i0N48H6AEeqx8avg6HaMEw" target="_jhnKcH6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLqfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+      </edges>
+      <edges xmi:id="_6T18MBg7Eeu6or9olyIQMQ" source="_jhnKcH6AEeqx8avg6HaMEw" target="_3Ai_cBg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_bAmysX6AEeqx8avg6HaMEw" name="Rhs">
+      <nodes xmi:id="_h-UywX6AEeqx8avg6HaMEw" name="n" outgoing="_lRnvgX6AEeqx8avg6HaMEw _lbgrUX6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLqvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_i0N48X6AEeqx8avg6HaMEw" name="s" incoming="_lRnvgX6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLq_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="__JIQIRg7Eeu6or9olyIQMQ" value="total - cost">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_jhnKcX6AEeqx8avg6HaMEw" name="a" incoming="_lbgrUX6AEeqx8avg6HaMEw" outgoing="_6T18MRg7Eeu6or9olyIQMQ">
+        <annotations xmi:id="_ZwmLrfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_3Ai_cRg7Eeu6or9olyIQMQ" name="c" incoming="_6T18MRg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_4CfkoBg7Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_lRnvgX6AEeqx8avg6HaMEw" source="_h-UywX6AEeqx8avg6HaMEw" target="_i0N48X6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLsPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_lbgrUX6AEeqx8avg6HaMEw" source="_h-UywX6AEeqx8avg6HaMEw" target="_jhnKcX6AEeqx8avg6HaMEw">
+        <annotations xmi:id="_ZwmLsfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_6T18MRg7Eeu6or9olyIQMQ" source="_jhnKcX6AEeqx8avg6HaMEw" target="_3Ai_cRg7Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_h-Uywn6AEeqx8avg6HaMEw" origin="_h-UywH6AEeqx8avg6HaMEw" image="_h-UywX6AEeqx8avg6HaMEw"/>
+    <mappings xmi:id="_i0N48n6AEeqx8avg6HaMEw" origin="_i0N48H6AEeqx8avg6HaMEw" image="_i0N48X6AEeqx8avg6HaMEw"/>
+    <mappings xmi:id="_jhnKcn6AEeqx8avg6HaMEw" origin="_jhnKcH6AEeqx8avg6HaMEw" image="_jhnKcX6AEeqx8avg6HaMEw"/>
+    <mappings xmi:id="_3AjmgBg7Eeu6or9olyIQMQ" origin="_3Ai_cBg7Eeu6or9olyIQMQ" image="_3Ai_cRg7Eeu6or9olyIQMQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_XJW1UOdwEeqNQq9Q3gvDxg" name="addArtifactRespectingHierarchyAndBudget">
+    <annotations xmi:id="_sfio9fGmEeqWiY5PaiE2JQ" key="featureConstraint" value=""/>
+    <annotations xmi:id="_sfio9vGmEeqWiY5PaiE2JQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_sfio9_GmEeqWiY5PaiE2JQ" key="features" value=""/>
+    <parameters xmi:id="_a0vMsOtnEeq2no1jblLBtA" name="budget" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_PxStYOtnEeq2no1jblLBtA" name="total" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_IgeLIOtnEeq2no1jblLBtA" name="cost" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_XJtaoOdwEeqNQq9Q3gvDxg" name="Lhs">
+      <nodes xmi:id="_al6bwOdwEeqNQq9Q3gvDxg" name="a" incoming="_gJiHIOtnEeq2no1jblLBtA" outgoing="_KzbFMOtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfha0PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_iKsb0OdwEeqNQq9Q3gvDxg" name="s" incoming="_fs4nYOtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfha0fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_L-w28OtnEeq2no1jblLBtA" value="total">
+          <annotations xmi:id="_sfha0vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_EHMdwOtnEeq2no1jblLBtA" name="c" incoming="_KzbFMOtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfha0_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_FBF6MOtnEeq2no1jblLBtA" value="cost">
+          <annotations xmi:id="_sfha1PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_XnM5sOtnEeq2no1jblLBtA" name="n" outgoing="_fs4nYOtnEeq2no1jblLBtA _gJiHIOtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfha1fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+        <attributes xmi:id="_YoZQ8OtnEeq2no1jblLBtA" value="budget">
+          <annotations xmi:id="_sfha1vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//NRP/budget"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_KzbFMOtnEeq2no1jblLBtA" source="_al6bwOdwEeqNQq9Q3gvDxg" target="_EHMdwOtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfha1_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+      <edges xmi:id="_fs4nYOtnEeq2no1jblLBtA" source="_XnM5sOtnEeq2no1jblLBtA" target="_iKsb0OdwEeqNQq9Q3gvDxg">
+        <annotations xmi:id="_sfha2PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_gJiHIOtnEeq2no1jblLBtA" source="_XnM5sOtnEeq2no1jblLBtA" target="_al6bwOdwEeqNQq9Q3gvDxg">
+        <annotations xmi:id="_sfha2fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_NqCSsO3oEeqBFsl45LYOhw">
+        <left xsi:type="henshin:Not" xmi:id="_BLXCEedyEeqNQq9Q3gvDxg">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_BLXCEudyEeqNQq9Q3gvDxg">
+            <annotations xmi:id="_sfha2vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+            <conclusion xmi:id="_BLXCE-dyEeqNQq9Q3gvDxg" name="1">
+              <nodes xmi:id="_BLXCFOdyEeqNQq9Q3gvDxg" name="a" incoming="_gJiHIutnEeq2no1jblLBtA" outgoing="_l-B-AOeFEeqNQq9Q3gvDxg _KzbFMutnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfha2_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_J75DkOdyEeqNQq9Q3gvDxg" name="s" incoming="_fs5OcOtnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfha3PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution"/>
+                <attributes xmi:id="_L-w28utnEeq2no1jblLBtA" value="total">
+                  <annotations xmi:id="_sfha3fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                  <type href="http://model.nrp#//Solution/totalCosts"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_blwvMOdwEeqNQq9Q3gvDxg" name="b" incoming="_l-B-AOeFEeqNQq9Q3gvDxg _f8rW4OtnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfha3vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_EHNr4OtnEeq2no1jblLBtA" name="c" incoming="_KzbFMutnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfiB4PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Cost"/>
+                <attributes xmi:id="_FBF6MutnEeq2no1jblLBtA" value="cost">
+                  <annotations xmi:id="_sfiB4fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                  <type href="http://model.nrp#//Cost/amount"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_XnNgwOtnEeq2no1jblLBtA" name="n" outgoing="_fs5OcOtnEeq2no1jblLBtA _f8rW4OtnEeq2no1jblLBtA _gJiHIutnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfiB4vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP"/>
+                <attributes xmi:id="_YoZQ8utnEeq2no1jblLBtA" value="budget">
+                  <annotations xmi:id="_sfiB4_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                  <type href="http://model.nrp#//NRP/budget"/>
+                </attributes>
+              </nodes>
+              <edges xmi:id="_l-B-AOeFEeqNQq9Q3gvDxg" source="_BLXCFOdyEeqNQq9Q3gvDxg" target="_blwvMOdwEeqNQq9Q3gvDxg">
+                <annotations xmi:id="_sfiB5PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+              </edges>
+              <edges xmi:id="_KzbFMutnEeq2no1jblLBtA" source="_BLXCFOdyEeqNQq9Q3gvDxg" target="_EHNr4OtnEeq2no1jblLBtA">
+                <annotations xmi:id="_sfiB5fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+              </edges>
+              <edges xmi:id="_fs5OcOtnEeq2no1jblLBtA" source="_XnNgwOtnEeq2no1jblLBtA" target="_J75DkOdyEeqNQq9Q3gvDxg">
+                <annotations xmi:id="_sfiB5vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/solutions"/>
+              </edges>
+              <edges xmi:id="_f8rW4OtnEeq2no1jblLBtA" source="_XnNgwOtnEeq2no1jblLBtA" target="_blwvMOdwEeqNQq9Q3gvDxg">
+                <annotations xmi:id="_sfiB5_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/availableArtifacts"/>
+              </edges>
+              <edges xmi:id="_gJiHIutnEeq2no1jblLBtA" source="_XnNgwOtnEeq2no1jblLBtA" target="_BLXCFOdyEeqNQq9Q3gvDxg">
+                <annotations xmi:id="_sfiB6PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/availableArtifacts"/>
+              </edges>
+              <formula xsi:type="henshin:Not" xmi:id="_1QVn8O27EeqBFsl45LYOhw">
+                <child xsi:type="henshin:NestedCondition" xmi:id="_QLtb0OdyEeqNQq9Q3gvDxg">
+                  <annotations xmi:id="_sfiB6fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                  <conclusion xmi:id="_QLtb0edyEeqNQq9Q3gvDxg">
+                    <nodes xmi:id="_TxIqYOdyEeqNQq9Q3gvDxg" name="s" outgoing="_vIZb0OeFEeqNQq9Q3gvDxg">
+                      <annotations xmi:id="_sfiB6vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                      <type href="http://model.nrp#//Solution"/>
+                    </nodes>
+                    <nodes xmi:id="_s3HVsOeFEeqNQq9Q3gvDxg" name="b" incoming="_vIZb0OeFEeqNQq9Q3gvDxg">
+                      <annotations xmi:id="_sfiB6_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                      <type href="http://model.nrp#//SoftwareArtifact"/>
+                    </nodes>
+                    <edges xmi:id="_vIZb0OeFEeqNQq9Q3gvDxg" source="_TxIqYOdyEeqNQq9Q3gvDxg" target="_s3HVsOeFEeqNQq9Q3gvDxg">
+                      <annotations xmi:id="_sfiB7PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                      <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+                    </edges>
+                  </conclusion>
+                  <mappings xmi:id="_TxIqYedyEeqNQq9Q3gvDxg" origin="_J75DkOdyEeqNQq9Q3gvDxg" image="_TxIqYOdyEeqNQq9Q3gvDxg"/>
+                  <mappings xmi:id="_s3HVseeFEeqNQq9Q3gvDxg" origin="_blwvMOdwEeqNQq9Q3gvDxg" image="_s3HVsOeFEeqNQq9Q3gvDxg"/>
+                </child>
+              </formula>
+            </conclusion>
+            <mappings xmi:id="_BLXCFedyEeqNQq9Q3gvDxg" origin="_al6bwOdwEeqNQq9Q3gvDxg" image="_BLXCFOdyEeqNQq9Q3gvDxg"/>
+            <mappings xmi:id="_J75DkedyEeqNQq9Q3gvDxg" origin="_iKsb0OdwEeqNQq9Q3gvDxg" image="_J75DkOdyEeqNQq9Q3gvDxg"/>
+            <mappings xmi:id="_EHNr4etnEeq2no1jblLBtA" origin="_EHMdwOtnEeq2no1jblLBtA" image="_EHNr4OtnEeq2no1jblLBtA"/>
+            <mappings xmi:id="_XnNgwetnEeq2no1jblLBtA" origin="_XnM5sOtnEeq2no1jblLBtA" image="_XnNgwOtnEeq2no1jblLBtA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_NqCSse3oEeqBFsl45LYOhw">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_NqCSsu3oEeqBFsl45LYOhw">
+            <annotations xmi:id="_sfiB7fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+            <conclusion xmi:id="_NqCSs-3oEeqBFsl45LYOhw" name="2">
+              <nodes xmi:id="_NqCStO3oEeqBFsl45LYOhw" name="s" outgoing="_JxRRYO3oEeqBFsl45LYOhw">
+                <annotations xmi:id="_sfiB7vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution"/>
+                <attributes xmi:id="_NqCSte3oEeqBFsl45LYOhw" value="total">
+                  <annotations xmi:id="_sfiB7_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                  <type href="http://model.nrp#//Solution/totalCosts"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_NqC5we3oEeqBFsl45LYOhw" name="a" incoming="_JxRRYO3oEeqBFsl45LYOhw">
+                <annotations xmi:id="_sfiB8PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <edges xmi:id="_JxRRYO3oEeqBFsl45LYOhw" source="_NqCStO3oEeqBFsl45LYOhw" target="_NqC5we3oEeqBFsl45LYOhw">
+                <annotations xmi:id="_sfiB8fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_NqC5wO3oEeqBFsl45LYOhw" origin="_iKsb0OdwEeqNQq9Q3gvDxg" image="_NqCStO3oEeqBFsl45LYOhw"/>
+            <mappings xmi:id="_NqC5wu3oEeqBFsl45LYOhw" origin="_al6bwOdwEeqNQq9Q3gvDxg" image="_NqC5we3oEeqBFsl45LYOhw"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_XJuBsOdwEeqNQq9Q3gvDxg" name="Rhs">
+      <nodes xmi:id="_al6bwedwEeqNQq9Q3gvDxg" name="a" incoming="_gJiHIetnEeq2no1jblLBtA _JxTGkO3oEeqBFsl45LYOhw" outgoing="_KzbFMetnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfiB8vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_iKsb0edwEeqNQq9Q3gvDxg" name="s" incoming="_fs4nYetnEeq2no1jblLBtA" outgoing="_JxTGkO3oEeqBFsl45LYOhw">
+        <annotations xmi:id="_sfiB8_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_L-w28etnEeq2no1jblLBtA" value="total + cost">
+          <annotations xmi:id="_sfiB9PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_EHNE0OtnEeq2no1jblLBtA" name="c" incoming="_KzbFMetnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfiB9fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_FBF6MetnEeq2no1jblLBtA" value="cost">
+          <annotations xmi:id="_sfiB9vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_XnM5setnEeq2no1jblLBtA" name="n" outgoing="_fs4nYetnEeq2no1jblLBtA _gJiHIetnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfiB9_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+        <attributes xmi:id="_YoZQ8etnEeq2no1jblLBtA" value="budget">
+          <annotations xmi:id="_sfio8PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <type href="http://model.nrp#//NRP/budget"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_KzbFMetnEeq2no1jblLBtA" source="_al6bwedwEeqNQq9Q3gvDxg" target="_EHNE0OtnEeq2no1jblLBtA">
+        <annotations xmi:id="_sfio8fGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+      <edges xmi:id="_fs4nYetnEeq2no1jblLBtA" source="_XnM5setnEeq2no1jblLBtA" target="_iKsb0edwEeqNQq9Q3gvDxg">
+        <annotations xmi:id="_sfio8vGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_gJiHIetnEeq2no1jblLBtA" source="_XnM5setnEeq2no1jblLBtA" target="_al6bwedwEeqNQq9Q3gvDxg">
+        <annotations xmi:id="_sfio8_GmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_JxTGkO3oEeqBFsl45LYOhw" source="_iKsb0edwEeqNQq9Q3gvDxg" target="_al6bwedwEeqNQq9Q3gvDxg">
+        <annotations xmi:id="_sfio9PGmEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_eMpHMOtoEeq2no1jblLBtA" name="doesNotExceedBudget" conditionText="total+cost &lt;= budget"/>
+    <mappings xmi:id="_al6bwudwEeqNQq9Q3gvDxg" origin="_al6bwOdwEeqNQq9Q3gvDxg" image="_al6bwedwEeqNQq9Q3gvDxg"/>
+    <mappings xmi:id="_iKsb0udwEeqNQq9Q3gvDxg" origin="_iKsb0OdwEeqNQq9Q3gvDxg" image="_iKsb0edwEeqNQq9Q3gvDxg"/>
+    <mappings xmi:id="_EHNE0etnEeq2no1jblLBtA" origin="_EHMdwOtnEeq2no1jblLBtA" image="_EHNE0OtnEeq2no1jblLBtA"/>
+    <mappings xmi:id="_XnM5sutnEeq2no1jblLBtA" origin="_XnM5sOtnEeq2no1jblLBtA" image="_XnM5setnEeq2no1jblLBtA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_zEUjoPDtEeqXFLZ5Fut3vg" name="removeArtifactRespectingHierarchy">
+    <annotations xmi:id="_Xb4-HPGoEeqWiY5PaiE2JQ" key="featureConstraint" value=""/>
+    <annotations xmi:id="_Xb4-HfGoEeqWiY5PaiE2JQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_Xb4-HvGoEeqWiY5PaiE2JQ" key="features" value=""/>
+    <parameters xmi:id="_fsE98Bg8Eeu6or9olyIQMQ" name="total" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_fsE98Rg8Eeu6or9olyIQMQ" name="cost" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_zEYOAPDtEeqXFLZ5Fut3vg" name="Lhs">
+      <nodes xmi:id="_02BUgPEeEeqXFLZ5Fut3vg" name="n" outgoing="_5J6yoPEeEeqXFLZ5Fut3vg _5VH9EPEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4XAPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_2IH1kPEeEeqXFLZ5Fut3vg" name="a" incoming="_5VH9EPEeEeqXFLZ5Fut3vg _5i-y4PEeEeqXFLZ5Fut3vg" outgoing="_lsnkEBg8Eeu6or9olyIQMQ">
+        <annotations xmi:id="_Xb4XAfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_4YmDYPEeEeqXFLZ5Fut3vg" name="s" incoming="_5J6yoPEeEeqXFLZ5Fut3vg" outgoing="_5i-y4PEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4XAvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_ccKsYBg8Eeu6or9olyIQMQ" value="total">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_j-f1YBg8Eeu6or9olyIQMQ" name="c" incoming="_lsnkEBg8Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_ko2Z8Bg8Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_5J6yoPEeEeqXFLZ5Fut3vg" source="_02BUgPEeEeqXFLZ5Fut3vg" target="_4YmDYPEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4XA_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_5VH9EPEeEeqXFLZ5Fut3vg" source="_02BUgPEeEeqXFLZ5Fut3vg" target="_2IH1kPEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4XBPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_5i-y4PEeEeqXFLZ5Fut3vg" source="_4YmDYPEeEeqXFLZ5Fut3vg" target="_2IH1kPEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4XBfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+      </edges>
+      <edges xmi:id="_lsnkEBg8Eeu6or9olyIQMQ" source="_2IH1kPEeEeqXFLZ5Fut3vg" target="_j-f1YBg8Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_UXc68PEfEeqXFLZ5Fut3vg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_UXc68fEfEeqXFLZ5Fut3vg">
+          <annotations xmi:id="_Xb4XBvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+          <conclusion xmi:id="_UXc68vEfEeqXFLZ5Fut3vg">
+            <nodes xmi:id="_UXc68_EfEeqXFLZ5Fut3vg" name="n" outgoing="_UXc69_EfEeqXFLZ5Fut3vg _UXdiAPEfEeqXFLZ5Fut3vg _Fq2joPEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4XB_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//NRP"/>
+            </nodes>
+            <nodes xmi:id="_UXc69fEfEeqXFLZ5Fut3vg" name="s" incoming="_UXc69_EfEeqXFLZ5Fut3vg" outgoing="_UXdiBPEfEeqXFLZ5Fut3vg _BeM9APEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4XCPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//Solution"/>
+              <attributes xmi:id="_ccMhkRg8Eeu6or9olyIQMQ" value="total">
+                <type href="http://model.nrp#//Solution/totalCosts"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_UXc6-PEfEeqXFLZ5Fut3vg" name="a" incoming="_UXdiAPEfEeqXFLZ5Fut3vg _UXdiBPEfEeqXFLZ5Fut3vg _B_DAQPEfEeqXFLZ5Fut3vg" outgoing="_lsnkEhg8Eeu6or9olyIQMQ">
+              <annotations xmi:id="_Xb4XCfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//SoftwareArtifact"/>
+            </nodes>
+            <nodes xmi:id="_61m4YPEeEeqXFLZ5Fut3vg" name="b" incoming="_BeM9APEfEeqXFLZ5Fut3vg _Fq2joPEfEeqXFLZ5Fut3vg" outgoing="_B_DAQPEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-EPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//SoftwareArtifact"/>
+            </nodes>
+            <nodes xmi:id="_j-gccBg8Eeu6or9olyIQMQ" incoming="_lsnkEhg8Eeu6or9olyIQMQ">
+              <type href="http://model.nrp#//Cost"/>
+              <attributes xmi:id="_ko2Z8hg8Eeu6or9olyIQMQ" value="cost">
+                <type href="http://model.nrp#//Cost/amount"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_UXc69_EfEeqXFLZ5Fut3vg" source="_UXc68_EfEeqXFLZ5Fut3vg" target="_UXc69fEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-EfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//NRP/solutions"/>
+            </edges>
+            <edges xmi:id="_UXdiAPEfEeqXFLZ5Fut3vg" source="_UXc68_EfEeqXFLZ5Fut3vg" target="_UXc6-PEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-EvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//NRP/availableArtifacts"/>
+            </edges>
+            <edges xmi:id="_UXdiBPEfEeqXFLZ5Fut3vg" source="_UXc69fEfEeqXFLZ5Fut3vg" target="_UXc6-PEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-E_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+            </edges>
+            <edges xmi:id="_BeM9APEfEeqXFLZ5Fut3vg" source="_UXc69fEfEeqXFLZ5Fut3vg" target="_61m4YPEeEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-FPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+            </edges>
+            <edges xmi:id="_Fq2joPEfEeqXFLZ5Fut3vg" source="_UXc68_EfEeqXFLZ5Fut3vg" target="_61m4YPEeEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-FfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//NRP/availableArtifacts"/>
+            </edges>
+            <edges xmi:id="_B_DAQPEfEeqXFLZ5Fut3vg" source="_61m4YPEeEeqXFLZ5Fut3vg" target="_UXc6-PEfEeqXFLZ5Fut3vg">
+              <annotations xmi:id="_Xb4-FvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+              <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+            </edges>
+            <edges xmi:id="_lsnkEhg8Eeu6or9olyIQMQ" source="_UXc6-PEfEeqXFLZ5Fut3vg" target="_j-gccBg8Eeu6or9olyIQMQ">
+              <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_UXc69PEfEeqXFLZ5Fut3vg" origin="_02BUgPEeEeqXFLZ5Fut3vg" image="_UXc68_EfEeqXFLZ5Fut3vg"/>
+          <mappings xmi:id="_UXc69vEfEeqXFLZ5Fut3vg" origin="_4YmDYPEeEeqXFLZ5Fut3vg" image="_UXc69fEfEeqXFLZ5Fut3vg"/>
+          <mappings xmi:id="_UXc6-fEfEeqXFLZ5Fut3vg" origin="_2IH1kPEeEeqXFLZ5Fut3vg" image="_UXc6-PEfEeqXFLZ5Fut3vg"/>
+          <mappings xmi:id="_j-gccRg8Eeu6or9olyIQMQ" origin="_j-f1YBg8Eeu6or9olyIQMQ" image="_j-gccBg8Eeu6or9olyIQMQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_zEYOAfDtEeqXFLZ5Fut3vg" name="Rhs">
+      <nodes xmi:id="_02BUgfEeEeqXFLZ5Fut3vg" name="n" outgoing="_5J7ZsPEeEeqXFLZ5Fut3vg _5VH9EfEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4-F_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_2IH1kfEeEeqXFLZ5Fut3vg" name="a" incoming="_5VH9EfEeEeqXFLZ5Fut3vg" outgoing="_lsnkERg8Eeu6or9olyIQMQ">
+        <annotations xmi:id="_Xb4-GPGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_4YmDYfEeEeqXFLZ5Fut3vg" name="s" incoming="_5J7ZsPEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4-GfGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_ccMhkBg8Eeu6or9olyIQMQ" value="total - cost">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_j-f1YRg8Eeu6or9olyIQMQ" name="c" incoming="_lsnkERg8Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_ko2Z8Rg8Eeu6or9olyIQMQ" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_5J7ZsPEeEeqXFLZ5Fut3vg" source="_02BUgfEeEeqXFLZ5Fut3vg" target="_4YmDYfEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4-GvGoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_5VH9EfEeEeqXFLZ5Fut3vg" source="_02BUgfEeEeqXFLZ5Fut3vg" target="_2IH1kfEeEeqXFLZ5Fut3vg">
+        <annotations xmi:id="_Xb4-G_GoEeqWiY5PaiE2JQ" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_lsnkERg8Eeu6or9olyIQMQ" source="_2IH1kfEeEeqXFLZ5Fut3vg" target="_j-f1YRg8Eeu6or9olyIQMQ">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_02BUgvEeEeqXFLZ5Fut3vg" origin="_02BUgPEeEeqXFLZ5Fut3vg" image="_02BUgfEeEeqXFLZ5Fut3vg"/>
+    <mappings xmi:id="_2IH1kvEeEeqXFLZ5Fut3vg" origin="_2IH1kPEeEeqXFLZ5Fut3vg" image="_2IH1kfEeEeqXFLZ5Fut3vg"/>
+    <mappings xmi:id="_4YmDYvEeEeqXFLZ5Fut3vg" origin="_4YmDYPEeEeqXFLZ5Fut3vg" image="_4YmDYfEeEeqXFLZ5Fut3vg"/>
+    <mappings xmi:id="_j-f1Yhg8Eeu6or9olyIQMQ" origin="_j-f1YBg8Eeu6or9olyIQMQ" image="_j-f1YRg8Eeu6or9olyIQMQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_do6jEGrgEeuGF-DRjYtPcA" name="removeArtifactRespectingHierarchyAndDependents">
+    <annotations xmi:id="_do6jEWrgEeuGF-DRjYtPcA" key="featureConstraint" value=""/>
+    <annotations xmi:id="_do6jEmrgEeuGF-DRjYtPcA" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_do6jE2rgEeuGF-DRjYtPcA" key="features" value=""/>
+    <parameters xmi:id="_do6jFGrgEeuGF-DRjYtPcA" name="total" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_do6jFWrgEeuGF-DRjYtPcA" name="cost" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_do6jFmrgEeuGF-DRjYtPcA" name="Lhs">
+      <nodes xmi:id="_do6jF2rgEeuGF-DRjYtPcA" name="n" outgoing="_do6jIGrgEeuGF-DRjYtPcA _do6jImrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jGGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_do6jGWrgEeuGF-DRjYtPcA" name="a" incoming="_do6jImrgEeuGF-DRjYtPcA _do6jJGrgEeuGF-DRjYtPcA" outgoing="_do6jJmrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jGmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_do6jG2rgEeuGF-DRjYtPcA" name="s" incoming="_do6jIGrgEeuGF-DRjYtPcA" outgoing="_do6jJGrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jHGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_do6jHWrgEeuGF-DRjYtPcA" value="total">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_do6jHmrgEeuGF-DRjYtPcA" name="c" incoming="_do6jJmrgEeuGF-DRjYtPcA">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_do6jH2rgEeuGF-DRjYtPcA" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_do6jIGrgEeuGF-DRjYtPcA" source="_do6jF2rgEeuGF-DRjYtPcA" target="_do6jG2rgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jIWrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_do6jImrgEeuGF-DRjYtPcA" source="_do6jF2rgEeuGF-DRjYtPcA" target="_do6jGWrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jI2rgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_do6jJGrgEeuGF-DRjYtPcA" source="_do6jG2rgEeuGF-DRjYtPcA" target="_do6jGWrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jJWrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+      </edges>
+      <edges xmi:id="_do6jJmrgEeuGF-DRjYtPcA" source="_do6jGWrgEeuGF-DRjYtPcA" target="_do6jHmrgEeuGF-DRjYtPcA">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_do6jJ2rgEeuGF-DRjYtPcA">
+        <left xsi:type="henshin:Not" xmi:id="_do6jKGrgEeuGF-DRjYtPcA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_do6jKWrgEeuGF-DRjYtPcA">
+            <annotations xmi:id="_do6jKmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+            <conclusion xmi:id="_do6jK2rgEeuGF-DRjYtPcA" name="1">
+              <nodes xmi:id="_do6jLGrgEeuGF-DRjYtPcA" name="n" outgoing="_do6jN2rgEeuGF-DRjYtPcA _do6jOWrgEeuGF-DRjYtPcA _do6jP2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jLWrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP"/>
+              </nodes>
+              <nodes xmi:id="_do6jLmrgEeuGF-DRjYtPcA" name="s" incoming="_do6jN2rgEeuGF-DRjYtPcA" outgoing="_do6jO2rgEeuGF-DRjYtPcA _do6jPWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jL2rgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution"/>
+                <attributes xmi:id="_do6jMGrgEeuGF-DRjYtPcA" value="total">
+                  <type href="http://model.nrp#//Solution/totalCosts"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_do6jMWrgEeuGF-DRjYtPcA" name="a" incoming="_do6jOWrgEeuGF-DRjYtPcA _do6jO2rgEeuGF-DRjYtPcA _do6jQWrgEeuGF-DRjYtPcA" outgoing="_do6jQ2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jMmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_do6jM2rgEeuGF-DRjYtPcA" name="b" incoming="_do6jPWrgEeuGF-DRjYtPcA _do6jP2rgEeuGF-DRjYtPcA" outgoing="_do6jQWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jNGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_do6jNWrgEeuGF-DRjYtPcA" incoming="_do6jQ2rgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//Cost"/>
+                <attributes xmi:id="_do6jNmrgEeuGF-DRjYtPcA" value="cost">
+                  <type href="http://model.nrp#//Cost/amount"/>
+                </attributes>
+              </nodes>
+              <edges xmi:id="_do6jN2rgEeuGF-DRjYtPcA" source="_do6jLGrgEeuGF-DRjYtPcA" target="_do6jLmrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jOGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/solutions"/>
+              </edges>
+              <edges xmi:id="_do6jOWrgEeuGF-DRjYtPcA" source="_do6jLGrgEeuGF-DRjYtPcA" target="_do6jMWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jOmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/availableArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jO2rgEeuGF-DRjYtPcA" source="_do6jLmrgEeuGF-DRjYtPcA" target="_do6jMWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jPGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jPWrgEeuGF-DRjYtPcA" source="_do6jLmrgEeuGF-DRjYtPcA" target="_do6jM2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jPmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jP2rgEeuGF-DRjYtPcA" source="_do6jLGrgEeuGF-DRjYtPcA" target="_do6jM2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jQGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/availableArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jQWrgEeuGF-DRjYtPcA" source="_do6jM2rgEeuGF-DRjYtPcA" target="_do6jMWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jQmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+              </edges>
+              <edges xmi:id="_do6jQ2rgEeuGF-DRjYtPcA" source="_do6jMWrgEeuGF-DRjYtPcA" target="_do6jNWrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_do6jRGrgEeuGF-DRjYtPcA" origin="_do6jF2rgEeuGF-DRjYtPcA" image="_do6jLGrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jRWrgEeuGF-DRjYtPcA" origin="_do6jG2rgEeuGF-DRjYtPcA" image="_do6jLmrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jRmrgEeuGF-DRjYtPcA" origin="_do6jGWrgEeuGF-DRjYtPcA" image="_do6jMWrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jR2rgEeuGF-DRjYtPcA" origin="_do6jHmrgEeuGF-DRjYtPcA" image="_do6jNWrgEeuGF-DRjYtPcA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_do6jSGrgEeuGF-DRjYtPcA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_do6jSWrgEeuGF-DRjYtPcA">
+            <annotations xmi:id="_do6jSmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+            <conclusion xmi:id="_do6jS2rgEeuGF-DRjYtPcA" name="2">
+              <nodes xmi:id="_do6jTGrgEeuGF-DRjYtPcA" name="n" outgoing="_do6jW2rgEeuGF-DRjYtPcA _do6jXWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jTWrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP"/>
+              </nodes>
+              <nodes xmi:id="_do6jTmrgEeuGF-DRjYtPcA" name="s" incoming="_do6jW2rgEeuGF-DRjYtPcA" outgoing="_do6jX2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jT2rgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution"/>
+                <attributes xmi:id="_do6jUGrgEeuGF-DRjYtPcA" value="total">
+                  <type href="http://model.nrp#//Solution/totalCosts"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_do6jUWrgEeuGF-DRjYtPcA" name="a" incoming="_do6jXWrgEeuGF-DRjYtPcA _do6jX2rgEeuGF-DRjYtPcA _do6jYmrgEeuGF-DRjYtPcA _do6jY2rgEeuGF-DRjYtPcA _do6jZGrgEeuGF-DRjYtPcA" outgoing="_do6jYWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jUmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_do6jU2rgEeuGF-DRjYtPcA" name="sa1" outgoing="_do6jYmrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jVGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_do6jVWrgEeuGF-DRjYtPcA" name="sa2" outgoing="_do6jY2rgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jVmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <nodes xmi:id="_do6jV2rgEeuGF-DRjYtPcA" incoming="_do6jYWrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//Cost"/>
+                <attributes xmi:id="_do6jWGrgEeuGF-DRjYtPcA" value="cost">
+                  <type href="http://model.nrp#//Cost/amount"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_do6jWWrgEeuGF-DRjYtPcA" name="sa3" outgoing="_do6jZGrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact"/>
+              </nodes>
+              <edges xmi:id="_do6jW2rgEeuGF-DRjYtPcA" source="_do6jTGrgEeuGF-DRjYtPcA" target="_do6jTmrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jXGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/solutions"/>
+              </edges>
+              <edges xmi:id="_do6jXWrgEeuGF-DRjYtPcA" source="_do6jTGrgEeuGF-DRjYtPcA" target="_do6jUWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jXmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//NRP/availableArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jX2rgEeuGF-DRjYtPcA" source="_do6jTmrgEeuGF-DRjYtPcA" target="_do6jUWrgEeuGF-DRjYtPcA">
+                <annotations xmi:id="_do6jYGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+                <type href="http://model.nrp#//Solution/selectedArtifacts"/>
+              </edges>
+              <edges xmi:id="_do6jYWrgEeuGF-DRjYtPcA" source="_do6jUWrgEeuGF-DRjYtPcA" target="_do6jV2rgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+              </edges>
+              <edges xmi:id="_do6jYmrgEeuGF-DRjYtPcA" source="_do6jU2rgEeuGF-DRjYtPcA" target="_do6jUWrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+              </edges>
+              <edges xmi:id="_do6jY2rgEeuGF-DRjYtPcA" source="_do6jVWrgEeuGF-DRjYtPcA" target="_do6jUWrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+              </edges>
+              <edges xmi:id="_do6jZGrgEeuGF-DRjYtPcA" source="_do6jWWrgEeuGF-DRjYtPcA" target="_do6jUWrgEeuGF-DRjYtPcA">
+                <type href="http://model.nrp#//SoftwareArtifact/requires"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_do6jZmrgEeuGF-DRjYtPcA" origin="_do6jF2rgEeuGF-DRjYtPcA" image="_do6jTGrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jZ2rgEeuGF-DRjYtPcA" origin="_do6jG2rgEeuGF-DRjYtPcA" image="_do6jTmrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jaGrgEeuGF-DRjYtPcA" origin="_do6jGWrgEeuGF-DRjYtPcA" image="_do6jUWrgEeuGF-DRjYtPcA"/>
+            <mappings xmi:id="_do6jaWrgEeuGF-DRjYtPcA" origin="_do6jHmrgEeuGF-DRjYtPcA" image="_do6jV2rgEeuGF-DRjYtPcA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_do6jamrgEeuGF-DRjYtPcA" name="Rhs">
+      <nodes xmi:id="_do6ja2rgEeuGF-DRjYtPcA" name="n" outgoing="_do6jdGrgEeuGF-DRjYtPcA _do6jdmrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jbGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP"/>
+      </nodes>
+      <nodes xmi:id="_do6jbWrgEeuGF-DRjYtPcA" name="a" incoming="_do6jdmrgEeuGF-DRjYtPcA" outgoing="_do6jeGrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jbmrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//SoftwareArtifact"/>
+      </nodes>
+      <nodes xmi:id="_do6jb2rgEeuGF-DRjYtPcA" name="s" incoming="_do6jdGrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jcGrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//Solution"/>
+        <attributes xmi:id="_do6jcWrgEeuGF-DRjYtPcA" value="total - cost">
+          <type href="http://model.nrp#//Solution/totalCosts"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_do6jcmrgEeuGF-DRjYtPcA" name="c" incoming="_do6jeGrgEeuGF-DRjYtPcA">
+        <type href="http://model.nrp#//Cost"/>
+        <attributes xmi:id="_do6jc2rgEeuGF-DRjYtPcA" value="cost">
+          <type href="http://model.nrp#//Cost/amount"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_do6jdGrgEeuGF-DRjYtPcA" source="_do6ja2rgEeuGF-DRjYtPcA" target="_do6jb2rgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jdWrgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/solutions"/>
+      </edges>
+      <edges xmi:id="_do6jdmrgEeuGF-DRjYtPcA" source="_do6ja2rgEeuGF-DRjYtPcA" target="_do6jbWrgEeuGF-DRjYtPcA">
+        <annotations xmi:id="_do6jd2rgEeuGF-DRjYtPcA" key="presenceCondition" value=""/>
+        <type href="http://model.nrp#//NRP/availableArtifacts"/>
+      </edges>
+      <edges xmi:id="_do6jeGrgEeuGF-DRjYtPcA" source="_do6jbWrgEeuGF-DRjYtPcA" target="_do6jcmrgEeuGF-DRjYtPcA">
+        <type href="http://model.nrp#//SoftwareArtifact/costs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_do6jeWrgEeuGF-DRjYtPcA" origin="_do6jF2rgEeuGF-DRjYtPcA" image="_do6ja2rgEeuGF-DRjYtPcA"/>
+    <mappings xmi:id="_do6jemrgEeuGF-DRjYtPcA" origin="_do6jGWrgEeuGF-DRjYtPcA" image="_do6jbWrgEeuGF-DRjYtPcA"/>
+    <mappings xmi:id="_do6je2rgEeuGF-DRjYtPcA" origin="_do6jG2rgEeuGF-DRjYtPcA" image="_do6jb2rgEeuGF-DRjYtPcA"/>
+    <mappings xmi:id="_do6jfGrgEeuGF-DRjYtPcA" origin="_do6jHmrgEeuGF-DRjYtPcA" image="_do6jcmrgEeuGF-DRjYtPcA"/>
+  </units>
+</henshin:Module>

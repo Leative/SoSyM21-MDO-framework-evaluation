@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NRP:NRP xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:NRP="http://model.nrp"
+    budget="14.0">
+  <availableArtifacts
+      name="SAcheapTotalCostsExceedBudget">
+    <costs amount="5.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAinSolution"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <solutions
+      selectedArtifacts="//@availableArtifacts.1"
+      totalCosts="10.0"/>
+</NRP:NRP>

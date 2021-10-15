@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NRP:NRP xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:NRP="http://model.nrp"
+    budget="20.0">
+  <availableArtifacts
+      name="SAcheapMissingReq"
+      requires="//@availableArtifacts.1">
+    <costs amount="5.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAcheapNoReq">
+    <costs amount="5.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAexpensiveNoReq">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAcheapFulfilledReq"
+      requires="//@availableArtifacts.5">
+    <costs amount="5.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAexpensiveFulfilledReq"
+      requires="//@availableArtifacts.5">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SAinSolution"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <solutions
+      selectedArtifacts="//@availableArtifacts.5"/>
+</NRP:NRP>

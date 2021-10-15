@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="ASCII"?>
+<NRP:NRP xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:NRP="http://model.nrp" budget="4956.0">
+  <customers name="Bonnie Jacobson" importance="4.0" assigns="//@requirements.1/@valuations.1 //@requirements.10/@valuations.0 //@requirements.11/@valuations.0 //@requirements.20/@valuations.1 //@requirements.23/@valuations.2"/>
+  <customers name="Kellie Rolfson" importance="1.0" assigns="//@requirements.2/@valuations.0 //@requirements.23/@valuations.1"/>
+  <customers name="Jasper Schinner" importance="7.0" assigns="//@requirements.3/@valuations.1 //@requirements.7/@valuations.2 //@requirements.19/@valuations.2 //@requirements.24/@valuations.0"/>
+  <customers name="Ms. Estefania Abbott" importance="8.0" assigns="//@requirements.0/@valuations.0 //@requirements.10/@valuations.2 //@requirements.13/@valuations.0 //@requirements.14/@valuations.0 //@requirements.19/@valuations.0 //@requirements.23/@valuations.2"/>
+  <customers name="Maya Kuhlman" importance="5.0" assigns="//@requirements.0/@valuations.1 //@requirements.14/@valuations.1 //@requirements.16/@valuations.0 //@requirements.18/@valuations.0 //@requirements.20/@valuations.1 //@requirements.22/@valuations.1"/>
+  <customers name="Vella Jerde" importance="2.0" assigns="//@requirements.7/@valuations.0 //@requirements.15/@valuations.1 //@requirements.20/@valuations.1"/>
+  <customers name="Aletha Grant" importance="2.0" assigns="//@requirements.5/@valuations.0 //@requirements.10/@valuations.0 //@requirements.18/@valuations.0 //@requirements.19/@valuations.0 //@requirements.21/@valuations.0"/>
+  <customers name="Alverta Hyatt" importance="2.0" assigns="//@requirements.7/@valuations.1 //@requirements.12/@valuations.0 //@requirements.22/@valuations.1"/>
+  <customers name="Annette Crist II" importance="1.0" assigns="//@requirements.2/@valuations.0 //@requirements.10/@valuations.1 //@requirements.10/@valuations.2 //@requirements.15/@valuations.1 //@requirements.17/@valuations.0"/>
+  <customers name="Peter Nikolaus Sr." importance="10.0" assigns="//@requirements.6/@valuations.0 //@requirements.13/@valuations.0"/>
+  <customers name="Ms. Eugene Prohaska" importance="2.0" assigns="//@requirements.1/@valuations.0"/>
+  <customers name="Rodolfo Schamberger V" importance="3.0" assigns="//@requirements.6/@valuations.0 //@requirements.19/@valuations.1"/>
+  <customers name="Miller Heaney" importance="9.0" assigns="//@requirements.4/@valuations.0 //@requirements.24/@valuations.1"/>
+  <customers name="Syble Koepp III" importance="1.0" assigns="//@requirements.6/@valuations.0 //@requirements.8/@valuations.0 //@requirements.9/@valuations.0 //@requirements.10/@valuations.2 //@requirements.19/@valuations.1 //@requirements.23/@valuations.0"/>
+  <customers name="Vincenzo Fahey" importance="4.0" assigns="//@requirements.2/@valuations.1 //@requirements.15/@valuations.0 //@requirements.19/@valuations.2"/>
+  <customers name="Adelia Nienow" importance="7.0" assigns="//@requirements.2/@valuations.0 //@requirements.12/@valuations.0 //@requirements.24/@valuations.0"/>
+  <customers name="Duncan Abernathy" importance="1.0" assigns="//@requirements.2/@valuations.1 //@requirements.23/@valuations.0 //@requirements.23/@valuations.2"/>
+  <customers name="Johnnie Ryan IV" importance="5.0" assigns="//@requirements.4/@valuations.0 //@requirements.9/@valuations.0 //@requirements.10/@valuations.1 //@requirements.15/@valuations.1"/>
+  <customers name="Grayce Lynch" importance="1.0" assigns="//@requirements.2/@valuations.1 //@requirements.23/@valuations.1"/>
+  <customers name="Ms. Karen Spinka" importance="4.0" assigns="//@requirements.3/@valuations.1 //@requirements.8/@valuations.1"/>
+  <customers name="Michael Corkery DVM" importance="8.0" assigns="//@requirements.3/@valuations.0 //@requirements.19/@valuations.0 //@requirements.22/@valuations.0"/>
+  <customers name="Miss Verda Franecki" importance="3.0" assigns="//@requirements.1/@valuations.1 //@requirements.21/@valuations.0"/>
+  <customers name="Ms. Deanna Ritchie" importance="5.0" assigns="//@requirements.0/@valuations.1 //@requirements.13/@valuations.1"/>
+  <customers name="Delbert Reichert" importance="10.0" assigns="//@requirements.5/@valuations.1 //@requirements.7/@valuations.1 //@requirements.7/@valuations.2 //@requirements.14/@valuations.0 //@requirements.16/@valuations.0 //@requirements.17/@valuations.0 //@requirements.20/@valuations.0 //@requirements.22/@valuations.1 //@requirements.23/@valuations.1"/>
+  <customers name="Bailee Langworth" importance="3.0" assigns="//@requirements.7/@valuations.0 //@requirements.9/@valuations.0 //@requirements.13/@valuations.1"/>
+  <availableArtifacts name="Software artifact Y-Solowarm version 4.3" requires="//@availableArtifacts.100 //@availableArtifacts.185 //@availableArtifacts.192" contributesTo="//@requirements.3/@realisations.2">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Solarbreeze version 9.91" requires="//@availableArtifacts.120" contributesTo="//@requirements.12/@realisations.0">
+    <costs amount="65.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardguard version 5.57" requires="//@availableArtifacts.154 //@availableArtifacts.166 //@availableArtifacts.10 //@availableArtifacts.127" contributesTo="//@requirements.24/@realisations.2">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Regrant version 7.17" requires="//@availableArtifacts.98 //@availableArtifacts.24 //@availableArtifacts.165 //@availableArtifacts.34" contributesTo="//@requirements.11/@realisations.0">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Daltfresh version 3.50" requires="//@availableArtifacts.5 //@availableArtifacts.173 //@availableArtifacts.164 //@availableArtifacts.68" contributesTo="//@requirements.21/@realisations.0">
+    <costs amount="57.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact It version 0.9.2" requires="//@availableArtifacts.197 //@availableArtifacts.180 //@availableArtifacts.174">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Daltfresh version 3.94" requires="//@availableArtifacts.182" contributesTo="//@requirements.12/@realisations.1">
+    <costs amount="84.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact It version 5.2" requires="//@availableArtifacts.61 //@availableArtifacts.9 //@availableArtifacts.98 //@availableArtifacts.95" contributesTo="//@requirements.24/@realisations.3">
+    <costs amount="58.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tresom version 0.7.8" requires="//@availableArtifacts.64 //@availableArtifacts.161 //@availableArtifacts.74 //@availableArtifacts.102" contributesTo="//@requirements.10/@realisations.2">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Viva version 0.0.3" requires="//@availableArtifacts.139 //@availableArtifacts.192 //@availableArtifacts.63 //@availableArtifacts.146">
+    <costs amount="74.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Aerified version 0.05">
+    <costs amount="90.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Veribet version 4.0.1" requires="//@availableArtifacts.35 //@availableArtifacts.85 //@availableArtifacts.173" contributesTo="//@requirements.19/@realisations.0">
+    <costs amount="62.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 0.0.2" requires="//@availableArtifacts.65 //@availableArtifacts.31 //@availableArtifacts.104 //@availableArtifacts.26" contributesTo="//@requirements.11/@realisations.1">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Alphazap version 0.4.0" requires="//@availableArtifacts.61 //@availableArtifacts.22" contributesTo="//@requirements.16/@realisations.0">
+    <costs amount="87.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Veribet version 7.6" requires="//@availableArtifacts.65 //@availableArtifacts.141" contributesTo="//@requirements.9/@realisations.1">
+    <costs amount="95.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sonair version 0.3.5" requires="//@availableArtifacts.108 //@availableArtifacts.110 //@availableArtifacts.159 //@availableArtifacts.54" contributesTo="//@requirements.14/@realisations.0">
+    <costs amount="54.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bamity version 1.9.2" requires="//@availableArtifacts.116" contributesTo="//@requirements.16/@realisations.0">
+    <costs amount="92.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zaam-Dox version 0.2" contributesTo="//@requirements.9/@realisations.0">
+    <costs amount="59.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 0.0" requires="//@availableArtifacts.124" contributesTo="//@requirements.24/@realisations.2">
+    <costs amount="84.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fix San version 0.4.8" requires="//@availableArtifacts.110 //@availableArtifacts.48 //@availableArtifacts.128" contributesTo="//@requirements.2/@realisations.1 //@requirements.24/@realisations.1">
+    <costs amount="81.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Mat Lam Tam version 0.4.9" requires="//@availableArtifacts.81 //@availableArtifacts.59 //@availableArtifacts.53 //@availableArtifacts.108" contributesTo="//@requirements.20/@realisations.1">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zathin version 1.74" requires="//@availableArtifacts.146" contributesTo="//@requirements.20/@realisations.1 //@requirements.15/@realisations.0">
+    <costs amount="83.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Regrant version 0.2.5" requires="//@availableArtifacts.140 //@availableArtifacts.95">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Lotlux version 0.8.7" contributesTo="//@requirements.19/@realisations.0">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Opela version 7.7.4" requires="//@availableArtifacts.173 //@availableArtifacts.189 //@availableArtifacts.156">
+    <costs amount="63.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tin version 0.1.6" requires="//@availableArtifacts.144 //@availableArtifacts.101 //@availableArtifacts.78" contributesTo="//@requirements.4/@realisations.1">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cookley version 1.2.3" requires="//@availableArtifacts.101">
+    <costs amount="95.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zontrax version 1.41" requires="//@availableArtifacts.183" contributesTo="//@requirements.6/@realisations.0">
+    <costs amount="54.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Rank version 8.8" requires="//@availableArtifacts.176 //@availableArtifacts.134 //@availableArtifacts.58 //@availableArtifacts.139" contributesTo="//@requirements.22/@realisations.0">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Trippledex version 6.1.3" contributesTo="//@requirements.7/@realisations.1">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Hatity version 4.4.3" requires="//@availableArtifacts.37 //@availableArtifacts.33" contributesTo="//@requirements.2/@realisations.1 //@requirements.21/@realisations.1">
+    <costs amount="70.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tampflex version 0.5.8" requires="//@availableArtifacts.76 //@availableArtifacts.36 //@availableArtifacts.149">
+    <costs amount="98.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sub-Ex version 5.2.5" requires="//@availableArtifacts.198" contributesTo="//@requirements.17/@realisations.0">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Temp version 0.2.7" requires="//@availableArtifacts.90 //@availableArtifacts.72 //@availableArtifacts.196">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Toughjoyfax version 0.8.9" requires="//@availableArtifacts.104 //@availableArtifacts.106 //@availableArtifacts.120">
+    <costs amount="82.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Greenlam version 0.9" requires="//@availableArtifacts.60">
+    <costs amount="50.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardify version 0.3.8">
+    <costs amount="53.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bigtax version 0.39" requires="//@availableArtifacts.193 //@availableArtifacts.151 //@availableArtifacts.87">
+    <costs amount="94.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Andalax version 4.15" requires="//@availableArtifacts.172 //@availableArtifacts.47" contributesTo="//@requirements.7/@realisations.0 //@requirements.8/@realisations.0">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Greenlam version 0.68" contributesTo="//@requirements.14/@realisations.0">
+    <costs amount="90.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ronstring version 0.52" requires="//@availableArtifacts.195 //@availableArtifacts.192" contributesTo="//@requirements.14/@realisations.0">
+    <costs amount="59.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cookley version 0.0.4" contributesTo="//@requirements.5/@realisations.0">
+    <costs amount="55.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 0.3.1" requires="//@availableArtifacts.107" contributesTo="//@requirements.5/@realisations.1">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Matsoft version 0.66" contributesTo="//@requirements.17/@realisations.2">
+    <costs amount="57.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Job version 0.8.5" requires="//@availableArtifacts.93 //@availableArtifacts.78 //@availableArtifacts.75" contributesTo="//@requirements.11/@realisations.1">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Otcom version 0.1.9" requires="//@availableArtifacts.81 //@availableArtifacts.179" contributesTo="//@requirements.7/@realisations.0">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Treeflex version 1.6" requires="//@availableArtifacts.196 //@availableArtifacts.67" contributesTo="//@requirements.17/@realisations.1">
+    <costs amount="62.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 0.3.5" requires="//@availableArtifacts.98">
+    <costs amount="52.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ronstring version 0.4.4" requires="//@availableArtifacts.94 //@availableArtifacts.129 //@availableArtifacts.99">
+    <costs amount="63.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zathin version 4.53" requires="//@availableArtifacts.173 //@availableArtifacts.119 //@availableArtifacts.142" contributesTo="//@requirements.23/@realisations.2 //@requirements.10/@realisations.3">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Home Ing version 1.5.9" requires="//@availableArtifacts.98 //@availableArtifacts.99" contributesTo="//@requirements.18/@realisations.0">
+    <costs amount="53.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sonsing version 8.5" requires="//@availableArtifacts.178 //@availableArtifacts.193 //@availableArtifacts.112 //@availableArtifacts.114" contributesTo="//@requirements.24/@realisations.0">
+    <costs amount="55.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact It version 1.06" requires="//@availableArtifacts.56 //@availableArtifacts.91" contributesTo="//@requirements.17/@realisations.1">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bitchip version 2.2" requires="//@availableArtifacts.106 //@availableArtifacts.76">
+    <costs amount="98.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Namfix version 4.0" requires="//@availableArtifacts.117 //@availableArtifacts.74 //@availableArtifacts.195 //@availableArtifacts.65">
+    <costs amount="99.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fintone version 0.0.4" requires="//@availableArtifacts.59 //@availableArtifacts.130 //@availableArtifacts.137" contributesTo="//@requirements.20/@realisations.0">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Matsoft version 0.60">
+    <costs amount="87.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Overhold version 5.83" requires="//@availableArtifacts.152 //@availableArtifacts.114 //@availableArtifacts.69 //@availableArtifacts.64" contributesTo="//@requirements.20/@realisations.1">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bytecard version 0.68" requires="//@availableArtifacts.110 //@availableArtifacts.82 //@availableArtifacts.132 //@availableArtifacts.167">
+    <costs amount="97.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Y-Solowarm version 1.52" requires="//@availableArtifacts.78 //@availableArtifacts.76">
+    <costs amount="75.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Alphazap version 3.98">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 0.7.1" requires="//@availableArtifacts.101 //@availableArtifacts.67 //@availableArtifacts.128">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Vagram version 0.6.1" requires="//@availableArtifacts.68 //@availableArtifacts.73" contributesTo="//@requirements.16/@realisations.0">
+    <costs amount="95.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Job version 3.74" requires="//@availableArtifacts.128">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Flowdesk version 8.1.7" requires="//@availableArtifacts.149">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Latlux version 0.78" requires="//@availableArtifacts.68">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Namfix version 0.3.3" contributesTo="//@requirements.7/@realisations.0">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zontrax version 0.28" requires="//@availableArtifacts.187 //@availableArtifacts.175 //@availableArtifacts.68">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zaam-Dox version 0.5" requires="//@availableArtifacts.150 //@availableArtifacts.176 //@availableArtifacts.120 //@availableArtifacts.144">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Voltsillam version 1.4" requires="//@availableArtifacts.151">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Gembucket version 0.5.6" requires="//@availableArtifacts.103 //@availableArtifacts.192 //@availableArtifacts.106" contributesTo="//@requirements.1/@realisations.0">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Veribet version 0.4.1" requires="//@availableArtifacts.181" contributesTo="//@requirements.3/@realisations.0">
+    <costs amount="74.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Kanlam version 8.6.2">
+    <costs amount="95.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Toughjoyfax version 6.54" requires="//@availableArtifacts.172">
+    <costs amount="52.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Solarbreeze version 0.41" requires="//@availableArtifacts.116 //@availableArtifacts.147 //@availableArtifacts.190">
+    <costs amount="81.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Matsoft version 7.6" requires="//@availableArtifacts.195">
+    <costs amount="98.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Wrapsafe version 5.5.9" requires="//@availableArtifacts.138 //@availableArtifacts.176 //@availableArtifacts.107 //@availableArtifacts.118">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Domainer version 0.8.8" requires="//@availableArtifacts.141" contributesTo="//@requirements.20/@realisations.0">
+    <costs amount="74.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zoolab version 0.4.7" requires="//@availableArtifacts.182">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ventosanzap version 0.13" requires="//@availableArtifacts.96 //@availableArtifacts.156" contributesTo="//@requirements.12/@realisations.0">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Regrant version 0.68" contributesTo="//@requirements.5/@realisations.0">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Greenlam version 4.0.7" requires="//@availableArtifacts.176 //@availableArtifacts.102 //@availableArtifacts.179 //@availableArtifacts.146">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Subin version 0.4.9" requires="//@availableArtifacts.170 //@availableArtifacts.99 //@availableArtifacts.194 //@availableArtifacts.101">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Otcom version 0.9.2" contributesTo="//@requirements.23/@realisations.2 //@requirements.13/@realisations.0">
+    <costs amount="65.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 1.13" requires="//@availableArtifacts.135" contributesTo="//@requirements.21/@realisations.2">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardify version 0.00">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Flowdesk version 1.5.6" requires="//@availableArtifacts.95 //@availableArtifacts.177" contributesTo="//@requirements.11/@realisations.1">
+    <costs amount="90.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fixflex version 6.44">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Wrapsafe version 4.3.0" requires="//@availableArtifacts.112 //@availableArtifacts.169" contributesTo="//@requirements.21/@realisations.2">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Asoka version 0.41" requires="//@availableArtifacts.191 //@availableArtifacts.175" contributesTo="//@requirements.1/@realisations.0">
+    <costs amount="100.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cookley version 0.3.4" requires="//@availableArtifacts.122 //@availableArtifacts.165 //@availableArtifacts.92">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Solarbreeze version 0.0.8" contributesTo="//@requirements.23/@realisations.1">
+    <costs amount="71.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Viva version 0.6.3" requires="//@availableArtifacts.100">
+    <costs amount="74.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ronstring version 1.15">
+    <costs amount="74.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 7.1" requires="//@availableArtifacts.196 //@availableArtifacts.188 //@availableArtifacts.177">
+    <costs amount="57.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zoolab version 4.03" requires="//@availableArtifacts.154 //@availableArtifacts.183">
+    <costs amount="87.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Prodder version 3.6">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Y-Solowarm version 0.7.1" requires="//@availableArtifacts.122 //@availableArtifacts.172 //@availableArtifacts.163" contributesTo="//@requirements.12/@realisations.1">
+    <costs amount="78.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zaam-Dox version 3.89">
+    <costs amount="95.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Alpha version 2.2">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tin version 0.95" requires="//@availableArtifacts.143 //@availableArtifacts.179 //@availableArtifacts.162 //@availableArtifacts.176">
+    <costs amount="58.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Job version 2.90" requires="//@availableArtifacts.105 //@availableArtifacts.180">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sonair version 0.3.8" requires="//@availableArtifacts.112 //@availableArtifacts.169 //@availableArtifacts.191">
+    <costs amount="73.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Veribet version 0.14" requires="//@availableArtifacts.152" contributesTo="//@requirements.16/@realisations.1">
+    <costs amount="53.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ventosanzap version 2.15" requires="//@availableArtifacts.108">
+    <costs amount="73.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fintone version 0.2.3" requires="//@availableArtifacts.115 //@availableArtifacts.134">
+    <costs amount="86.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sub-Ex version 0.89">
+    <costs amount="55.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Lotstring version 0.02" requires="//@availableArtifacts.115 //@availableArtifacts.187">
+    <costs amount="94.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 0.0.4" requires="//@availableArtifacts.193" contributesTo="//@requirements.3/@realisations.1">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ronstring version 3.54" requires="//@availableArtifacts.161" contributesTo="//@requirements.7/@realisations.0">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 0.39" requires="//@availableArtifacts.155 //@availableArtifacts.132 //@availableArtifacts.168 //@availableArtifacts.144">
+    <costs amount="94.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sub-Ex version 9.98" requires="//@availableArtifacts.127 //@availableArtifacts.151 //@availableArtifacts.156 //@availableArtifacts.172" contributesTo="//@requirements.23/@realisations.2">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 3.73" requires="//@availableArtifacts.121 //@availableArtifacts.182 //@availableArtifacts.151 //@availableArtifacts.189">
+    <costs amount="80.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bytecard version 0.12" requires="//@availableArtifacts.183 //@availableArtifacts.132 //@availableArtifacts.164 //@availableArtifacts.180" contributesTo="//@requirements.21/@realisations.0">
+    <costs amount="85.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Prodder version 0.13">
+    <costs amount="99.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zamit version 0.2.3" requires="//@availableArtifacts.144 //@availableArtifacts.191 //@availableArtifacts.161 //@availableArtifacts.130">
+    <costs amount="55.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Overhold version 0.7.9" requires="//@availableArtifacts.180">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Lotstring version 9.8" requires="//@availableArtifacts.141 //@availableArtifacts.124 //@availableArtifacts.125 //@availableArtifacts.156">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Ventosanzap version 8.34" requires="//@availableArtifacts.181">
+    <costs amount="86.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Prodder version 8.3" requires="//@availableArtifacts.127 //@availableArtifacts.165 //@availableArtifacts.154 //@availableArtifacts.137">
+    <costs amount="52.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Toughjoyfax version 4.3" requires="//@availableArtifacts.134 //@availableArtifacts.144 //@availableArtifacts.131 //@availableArtifacts.194">
+    <costs amount="96.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Holdlamis version 0.93" requires="//@availableArtifacts.162 //@availableArtifacts.125 //@availableArtifacts.171 //@availableArtifacts.157">
+    <costs amount="68.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Gembucket version 8.22" requires="//@availableArtifacts.195 //@availableArtifacts.198">
+    <costs amount="87.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bamity version 0.20" contributesTo="//@requirements.3/@realisations.0">
+    <costs amount="54.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bigtax version 8.7.2">
+    <costs amount="54.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Home Ing version 5.82" requires="//@availableArtifacts.146">
+    <costs amount="67.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bamity version 3.2.7" requires="//@availableArtifacts.194 //@availableArtifacts.161" contributesTo="//@requirements.16/@realisations.0">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Kanlam version 0.1.8" requires="//@availableArtifacts.140 //@availableArtifacts.165">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Holdlamis version 0.33" requires="//@availableArtifacts.154 //@availableArtifacts.159">
+    <costs amount="59.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bigtax version 2.6" requires="//@availableArtifacts.165 //@availableArtifacts.155">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Hatity version 8.1" requires="//@availableArtifacts.194 //@availableArtifacts.156 //@availableArtifacts.153 //@availableArtifacts.172">
+    <costs amount="82.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cookley version 9.2" requires="//@availableArtifacts.195" contributesTo="//@requirements.10/@realisations.1">
+    <costs amount="99.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zontrax version 2.7" requires="//@availableArtifacts.152 //@availableArtifacts.169 //@availableArtifacts.158 //@availableArtifacts.173">
+    <costs amount="96.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Stim version 2.23" contributesTo="//@requirements.18/@realisations.0">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardify version 6.0.9">
+    <costs amount="93.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 0.17" requires="//@availableArtifacts.195 //@availableArtifacts.153">
+    <costs amount="99.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Gembucket version 5.3" requires="//@availableArtifacts.172 //@availableArtifacts.197" contributesTo="//@requirements.20/@realisations.0 //@requirements.23/@realisations.0">
+    <costs amount="71.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 4.13" requires="//@availableArtifacts.187 //@availableArtifacts.167 //@availableArtifacts.151 //@availableArtifacts.146">
+    <costs amount="59.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Daltfresh version 3.3.7" requires="//@availableArtifacts.193">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fintone version 1.3.3" requires="//@availableArtifacts.196 //@availableArtifacts.153 //@availableArtifacts.161">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fixflex version 9.9.9" requires="//@availableArtifacts.165">
+    <costs amount="75.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sonair version 0.0.9" requires="//@availableArtifacts.181 //@availableArtifacts.143 //@availableArtifacts.189 //@availableArtifacts.182">
+    <costs amount="80.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Aerified version 0.2.0" requires="//@availableArtifacts.185 //@availableArtifacts.177 //@availableArtifacts.171">
+    <costs amount="94.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Holdlamis version 0.18" requires="//@availableArtifacts.184">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Duobam version 3.8.4" requires="//@availableArtifacts.157">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardify version 0.3.2" requires="//@availableArtifacts.196 //@availableArtifacts.157 //@availableArtifacts.186" contributesTo="//@requirements.10/@realisations.0">
+    <costs amount="60.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardify version 4.68" requires="//@availableArtifacts.188 //@availableArtifacts.179">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fixflex version 0.97" requires="//@availableArtifacts.178 //@availableArtifacts.195 //@availableArtifacts.160 //@availableArtifacts.163">
+    <costs amount="84.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Namfix version 2.22" requires="//@availableArtifacts.194 //@availableArtifacts.187 //@availableArtifacts.162 //@availableArtifacts.178" contributesTo="//@requirements.18/@realisations.0">
+    <costs amount="78.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Stronghold version 0.56" requires="//@availableArtifacts.196 //@availableArtifacts.165 //@availableArtifacts.157 //@availableArtifacts.187">
+    <costs amount="63.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Voyatouch version 3.09">
+    <costs amount="78.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Rank version 4.49">
+    <costs amount="98.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zontrax version 4.1" requires="//@availableArtifacts.163 //@availableArtifacts.166 //@availableArtifacts.182 //@availableArtifacts.162">
+    <costs amount="97.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tempsoft version 0.34" requires="//@availableArtifacts.181 //@availableArtifacts.159 //@availableArtifacts.174">
+    <costs amount="55.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Konklab version 0.3" requires="//@availableArtifacts.191 //@availableArtifacts.193 //@availableArtifacts.175">
+    <costs amount="66.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Lotlux version 7.3.2">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cookley version 9.48" requires="//@availableArtifacts.196 //@availableArtifacts.192 //@availableArtifacts.169 //@availableArtifacts.158">
+    <costs amount="90.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Namfix version 1.7.7" requires="//@availableArtifacts.166 //@availableArtifacts.189 //@availableArtifacts.164">
+    <costs amount="88.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 3.5" requires="//@availableArtifacts.190 //@availableArtifacts.178">
+    <costs amount="100.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Matsoft version 0.3.1" requires="//@availableArtifacts.166 //@availableArtifacts.160" contributesTo="//@requirements.8/@realisations.1">
+    <costs amount="75.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 2.84" requires="//@availableArtifacts.190 //@availableArtifacts.197">
+    <costs amount="79.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Fix San version 9.7" requires="//@availableArtifacts.196 //@availableArtifacts.180">
+    <costs amount="96.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sub-Ex version 0.1.8" requires="//@availableArtifacts.195 //@availableArtifacts.196 //@availableArtifacts.172" contributesTo="//@requirements.0/@realisations.0">
+    <costs amount="71.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Prodder version 0.49" requires="//@availableArtifacts.176 //@availableArtifacts.186">
+    <costs amount="83.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Holdlamis version 1.43" requires="//@availableArtifacts.176">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Latlux version 0.1.8" requires="//@availableArtifacts.193 //@availableArtifacts.175 //@availableArtifacts.173 //@availableArtifacts.184">
+    <costs amount="71.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Temp version 8.47" requires="//@availableArtifacts.177 //@availableArtifacts.183 //@availableArtifacts.172 //@availableArtifacts.176">
+    <costs amount="93.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Prodder version 1.96" requires="//@availableArtifacts.170 //@availableArtifacts.173 //@availableArtifacts.192" contributesTo="//@requirements.14/@realisations.1">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sonair version 1.3.4">
+    <costs amount="89.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Aerified version 0.7.8">
+    <costs amount="62.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Span version 5.4.7" requires="//@availableArtifacts.191" contributesTo="//@requirements.0/@realisations.1">
+    <costs amount="93.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact It version 7.4.8" requires="//@availableArtifacts.189 //@availableArtifacts.192">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tampflex version 6.18" requires="//@availableArtifacts.178 //@availableArtifacts.174 //@availableArtifacts.185">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zathin version 0.9.7" requires="//@availableArtifacts.197 //@availableArtifacts.181">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Trippledex version 0.3.8">
+    <costs amount="96.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Solarbreeze version 4.4.4" requires="//@availableArtifacts.198">
+    <costs amount="65.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 0.9.9" requires="//@availableArtifacts.184 //@availableArtifacts.196">
+    <costs amount="69.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zaam-Dox version 0.8.6" contributesTo="//@requirements.4/@realisations.0">
+    <costs amount="76.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Flexidy version 0.5.9" requires="//@availableArtifacts.199 //@availableArtifacts.198 //@availableArtifacts.194">
+    <costs amount="93.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bitchip version 7.0.5">
+    <costs amount="72.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Lotstring version 0.80" requires="//@availableArtifacts.194">
+    <costs amount="75.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Konklab version 0.9.7" requires="//@availableArtifacts.196 //@availableArtifacts.192 //@availableArtifacts.189 //@availableArtifacts.190">
+    <costs amount="84.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bitchip version 8.8" requires="//@availableArtifacts.191 //@availableArtifacts.193">
+    <costs amount="62.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 0.79" requires="//@availableArtifacts.199">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Cardguard version 8.3" requires="//@availableArtifacts.195 //@availableArtifacts.191">
+    <costs amount="90.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Job version 0.89" requires="//@availableArtifacts.187">
+    <costs amount="67.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Domainer version 9.24" requires="//@availableArtifacts.192 //@availableArtifacts.190">
+    <costs amount="51.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Veribet version 5.5.9" requires="//@availableArtifacts.190 //@availableArtifacts.199" contributesTo="//@requirements.2/@realisations.0">
+    <costs amount="91.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Zamit version 9.1" requires="//@availableArtifacts.192 //@availableArtifacts.191">
+    <costs amount="61.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Opela version 3.12" requires="//@availableArtifacts.196">
+    <costs amount="67.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Bamity version 4.0.6">
+    <costs amount="62.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Duobam version 8.1" requires="//@availableArtifacts.196 //@availableArtifacts.192 //@availableArtifacts.194 //@availableArtifacts.197">
+    <costs amount="92.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Sub-Ex version 0.25" requires="//@availableArtifacts.194">
+    <costs amount="67.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Alphazap version 3.44" requires="//@availableArtifacts.198 //@availableArtifacts.197 //@availableArtifacts.196 //@availableArtifacts.199">
+    <costs amount="99.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Quo Lux version 5.6" requires="//@availableArtifacts.198 //@availableArtifacts.195 //@availableArtifacts.199 //@availableArtifacts.197">
+    <costs amount="97.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tresom version 5.6.1">
+    <costs amount="56.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Andalax version 0.8.4" requires="//@availableArtifacts.198">
+    <costs amount="83.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 2.2.3" requires="//@availableArtifacts.198 //@availableArtifacts.199">
+    <costs amount="50.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Tres-Zap version 0.80" requires="//@availableArtifacts.199">
+    <costs amount="50.0"/>
+  </availableArtifacts>
+  <availableArtifacts name="Software artifact Pannier version 6.0">
+    <costs amount="77.0"/>
+  </availableArtifacts>
+  <requirements name="Specification #76202407">
+    <valuations value="8.0" assignedBy="//@customers.3"/>
+    <valuations value="5.0" assignedBy="//@customers.4 //@customers.22"/>
+    <realisations percentage="0.23" dependsOn="//@availableArtifacts.162"/>
+    <realisations percentage="0.55" dependsOn="//@availableArtifacts.170"/>
+  </requirements>
+  <requirements name="Specification #35268925">
+    <valuations value="6.0" assignedBy="//@customers.10"/>
+    <valuations value="3.0" assignedBy="//@customers.21 //@customers.0"/>
+    <realisations percentage="0.78" dependsOn="//@availableArtifacts.70 //@availableArtifacts.89"/>
+  </requirements>
+  <requirements name="Specification #65912805">
+    <valuations value="10.0" assignedBy="//@customers.8 //@customers.15 //@customers.1"/>
+    <valuations value="5.0" assignedBy="//@customers.14 //@customers.16 //@customers.18"/>
+    <realisations percentage="0.42" dependsOn="//@availableArtifacts.187"/>
+    <realisations percentage="0.59" dependsOn="//@availableArtifacts.19 //@availableArtifacts.30"/>
+  </requirements>
+  <requirements name="Specification #86450379">
+    <valuations value="10.0" assignedBy="//@customers.20"/>
+    <valuations value="6.0" assignedBy="//@customers.2 //@customers.19"/>
+    <realisations percentage="0.55" dependsOn="//@availableArtifacts.71 //@availableArtifacts.123"/>
+    <realisations percentage="0.25" dependsOn="//@availableArtifacts.108"/>
+    <realisations percentage="0.82" dependsOn="//@availableArtifacts.0"/>
+  </requirements>
+  <requirements name="Specification #67389643">
+    <valuations value="6.0" assignedBy="//@customers.17 //@customers.12"/>
+    <realisations percentage="0.03" dependsOn="//@availableArtifacts.177"/>
+    <realisations percentage="0.95" dependsOn="//@availableArtifacts.25"/>
+  </requirements>
+  <requirements name="Specification #49509809">
+    <valuations value="3.0" assignedBy="//@customers.6"/>
+    <valuations value="10.0" assignedBy="//@customers.23"/>
+    <realisations percentage="0.91" dependsOn="//@availableArtifacts.41 //@availableArtifacts.80"/>
+    <realisations percentage="0.79" dependsOn="//@availableArtifacts.42"/>
+  </requirements>
+  <requirements name="Specification #44095345">
+    <valuations value="9.0" assignedBy="//@customers.13 //@customers.9 //@customers.11"/>
+    <realisations percentage="0.32" dependsOn="//@availableArtifacts.27"/>
+  </requirements>
+  <requirements name="Specification #25166729">
+    <valuations value="3.0" assignedBy="//@customers.5 //@customers.24"/>
+    <valuations value="4.0" assignedBy="//@customers.7 //@customers.23"/>
+    <valuations value="4.0" assignedBy="//@customers.23 //@customers.2"/>
+    <realisations percentage="0.85" dependsOn="//@availableArtifacts.38 //@availableArtifacts.45 //@availableArtifacts.66 //@availableArtifacts.109"/>
+    <realisations percentage="0.47" dependsOn="//@availableArtifacts.29"/>
+  </requirements>
+  <requirements name="Specification #75304102">
+    <valuations value="7.0" assignedBy="//@customers.13"/>
+    <valuations value="4.0" assignedBy="//@customers.19"/>
+    <realisations percentage="0.19" dependsOn="//@availableArtifacts.38"/>
+    <realisations percentage="0.69" dependsOn="//@availableArtifacts.159"/>
+  </requirements>
+  <requirements name="Specification #51685850">
+    <valuations value="2.0" assignedBy="//@customers.17 //@customers.24 //@customers.13"/>
+    <realisations percentage="0.92" dependsOn="//@availableArtifacts.17"/>
+    <realisations percentage="0.4" dependsOn="//@availableArtifacts.14"/>
+  </requirements>
+  <requirements name="Specification #14297335">
+    <valuations value="9.0" assignedBy="//@customers.6 //@customers.0"/>
+    <valuations value="3.0" assignedBy="//@customers.17 //@customers.8"/>
+    <valuations value="8.0" assignedBy="//@customers.8 //@customers.13 //@customers.3"/>
+    <realisations percentage="0.77" dependsOn="//@availableArtifacts.145"/>
+    <realisations percentage="0.97" dependsOn="//@availableArtifacts.131"/>
+    <realisations percentage="0.62" dependsOn="//@availableArtifacts.8"/>
+    <realisations percentage="0.35" dependsOn="//@availableArtifacts.49"/>
+  </requirements>
+  <requirements name="Specification #11738404">
+    <valuations value="1.0" assignedBy="//@customers.0"/>
+    <realisations percentage="0.9" dependsOn="//@availableArtifacts.3"/>
+    <realisations percentage="0.5" dependsOn="//@availableArtifacts.12 //@availableArtifacts.44 //@availableArtifacts.86"/>
+  </requirements>
+  <requirements name="Specification #90044670">
+    <valuations value="7.0" assignedBy="//@customers.7 //@customers.15"/>
+    <realisations percentage="0.91" dependsOn="//@availableArtifacts.1 //@availableArtifacts.79"/>
+    <realisations percentage="0.6" dependsOn="//@availableArtifacts.6 //@availableArtifacts.97"/>
+  </requirements>
+  <requirements name="Specification #79937924">
+    <valuations value="2.0" assignedBy="//@customers.3 //@customers.9"/>
+    <valuations value="6.0" assignedBy="//@customers.22 //@customers.24"/>
+    <realisations percentage="0.63" dependsOn="//@availableArtifacts.83"/>
+  </requirements>
+  <requirements name="Specification #64561332">
+    <valuations value="7.0" assignedBy="//@customers.23 //@customers.3"/>
+    <valuations value="6.0" assignedBy="//@customers.4"/>
+    <realisations percentage="0.06" dependsOn="//@availableArtifacts.15 //@availableArtifacts.39 //@availableArtifacts.40"/>
+    <realisations percentage="0.83" dependsOn="//@availableArtifacts.167"/>
+  </requirements>
+  <requirements name="Specification #39430427">
+    <valuations value="4.0" assignedBy="//@customers.14"/>
+    <valuations value="10.0" assignedBy="//@customers.5 //@customers.8 //@customers.17"/>
+    <realisations percentage="0.0" dependsOn="//@availableArtifacts.21"/>
+  </requirements>
+  <requirements name="Specification #11766223">
+    <valuations value="6.0" assignedBy="//@customers.4 //@customers.23"/>
+    <realisations percentage="0.57" dependsOn="//@availableArtifacts.13 //@availableArtifacts.16 //@availableArtifacts.62 //@availableArtifacts.126"/>
+    <realisations percentage="0.17" dependsOn="//@availableArtifacts.103"/>
+  </requirements>
+  <requirements name="Specification #51980108">
+    <valuations value="7.0" assignedBy="//@customers.23 //@customers.8"/>
+    <realisations percentage="0.43" dependsOn="//@availableArtifacts.32"/>
+    <realisations percentage="0.54" dependsOn="//@availableArtifacts.46 //@availableArtifacts.52"/>
+    <realisations percentage="0.26" dependsOn="//@availableArtifacts.43"/>
+  </requirements>
+  <requirements name="Specification #68012274">
+    <valuations value="9.0" assignedBy="//@customers.6 //@customers.4"/>
+    <realisations percentage="0.84" dependsOn="//@availableArtifacts.50 //@availableArtifacts.133 //@availableArtifacts.148"/>
+  </requirements>
+  <requirements name="Specification #36181667">
+    <valuations value="9.0" assignedBy="//@customers.3 //@customers.20 //@customers.6"/>
+    <valuations value="4.0" assignedBy="//@customers.11 //@customers.13"/>
+    <valuations value="9.0" assignedBy="//@customers.14 //@customers.2"/>
+    <realisations percentage="0.31" dependsOn="//@availableArtifacts.11 //@availableArtifacts.23"/>
+  </requirements>
+  <requirements name="Specification #97878179">
+    <valuations value="3.0" assignedBy="//@customers.23"/>
+    <valuations value="5.0" assignedBy="//@customers.4 //@customers.5 //@customers.0"/>
+    <realisations percentage="0.15" dependsOn="//@availableArtifacts.55 //@availableArtifacts.77 //@availableArtifacts.136"/>
+    <realisations percentage="0.99" dependsOn="//@availableArtifacts.20 //@availableArtifacts.21 //@availableArtifacts.57"/>
+  </requirements>
+  <requirements name="Specification #17537018">
+    <valuations value="8.0" assignedBy="//@customers.6 //@customers.21"/>
+    <realisations percentage="0.67" dependsOn="//@availableArtifacts.4 //@availableArtifacts.113"/>
+    <realisations percentage="0.17" dependsOn="//@availableArtifacts.30"/>
+    <realisations percentage="0.94" dependsOn="//@availableArtifacts.84 //@availableArtifacts.88"/>
+  </requirements>
+  <requirements name="Specification #23627680">
+    <valuations value="1.0" assignedBy="//@customers.20"/>
+    <valuations value="4.0" assignedBy="//@customers.23 //@customers.7 //@customers.4"/>
+    <realisations percentage="0.37" dependsOn="//@availableArtifacts.28"/>
+  </requirements>
+  <requirements name="Specification #08145420">
+    <valuations value="7.0" assignedBy="//@customers.13 //@customers.16"/>
+    <valuations value="2.0" assignedBy="//@customers.23 //@customers.1 //@customers.18"/>
+    <valuations value="6.0" assignedBy="//@customers.3 //@customers.0 //@customers.16"/>
+    <realisations percentage="0.75" dependsOn="//@availableArtifacts.136"/>
+    <realisations percentage="0.57" dependsOn="//@availableArtifacts.91"/>
+    <realisations percentage="0.64" dependsOn="//@availableArtifacts.49 //@availableArtifacts.83 //@availableArtifacts.111"/>
+  </requirements>
+  <requirements name="Specification #63473360">
+    <valuations value="10.0" assignedBy="//@customers.2 //@customers.15"/>
+    <valuations value="10.0" assignedBy="//@customers.12"/>
+    <realisations percentage="0.37" dependsOn="//@availableArtifacts.51"/>
+    <realisations percentage="0.09" dependsOn="//@availableArtifacts.19"/>
+    <realisations percentage="0.74" dependsOn="//@availableArtifacts.2 //@availableArtifacts.18"/>
+    <realisations percentage="0.47" dependsOn="//@availableArtifacts.7"/>
+  </requirements>
+  <solutions/>
+</NRP:NRP>

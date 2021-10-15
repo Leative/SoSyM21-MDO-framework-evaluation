@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NRP:NRP xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:NRP="http://model.nrp"
+    budget="1200.0">
+  <customers
+      name="C1"
+      importance="1.0"
+      assigns="//@requirements.0/@valuations.0"/>
+  <availableArtifacts
+      name="SA1"
+      requires="//@availableArtifacts.1"
+      contributesTo="//@requirements.0/@realisations.0"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SA2"
+      requires="//@availableArtifacts.2"
+      solutions="//@solutions.0">
+    <costs amount="100.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SA3"
+      solutions="//@solutions.0">
+    <costs amount="1000.0"/>
+  </availableArtifacts>
+  <requirements>
+    <valuations
+        value="1.0"
+        assignedBy="//@customers.0"/>
+    <realisations
+        dependsOn="//@availableArtifacts.0"/>
+  </requirements>
+  <solutions
+      selectedArtifacts="//@availableArtifacts.0 //@availableArtifacts.1 //@availableArtifacts.2"
+      totalCosts="1110.0"/>
+</NRP:NRP>

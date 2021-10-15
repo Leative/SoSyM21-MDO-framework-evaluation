@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NRP:NRP xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:NRP="http://model.nrp"
+    budget="2000.0">
+  <availableArtifacts
+      name="SANotSelectedTwoDirectRealisations"
+      requires="//@availableArtifacts.1"
+      contributesTo="//@requirements.0/@realisations.0 //@requirements.0/@realisations.1">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SANotRequiredTwoIndirectRealisations"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SANotRequiredTwoDirectRealisations"
+      contributesTo="//@requirements.0/@realisations.0 //@requirements.0/@realisations.1"
+      solutions="//@solutions.0">
+    <costs amount="20.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SANotRequiredOneDirectRealisation"
+      contributesTo="//@requirements.0/@realisations.0"
+      solutions="//@solutions.0">
+    <costs amount="5.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SANotRequiredNoDirectRealisation"
+      requires="//@availableArtifacts.5"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <availableArtifacts
+      name="SARequired"
+      solutions="//@solutions.0">
+    <costs amount="10.0"/>
+  </availableArtifacts>
+  <requirements
+      name="RQ1">
+    <realisations
+        dependsOn="//@availableArtifacts.2 //@availableArtifacts.3 //@availableArtifacts.0"/>
+    <realisations
+        percentage="0.5"
+        dependsOn="//@availableArtifacts.2 //@availableArtifacts.0"/>
+  </requirements>
+  <solutions
+      selectedArtifacts="//@availableArtifacts.5 //@availableArtifacts.1 //@availableArtifacts.2 //@availableArtifacts.3 //@availableArtifacts.4"
+      totalCosts="55.0"/>
+</NRP:NRP>
