@@ -1,5 +1,6 @@
 # Explanation of collected data #
 
+## Archive files ##
 The 7z archives contain the raw output data of MDEOptimiser. Despite their small size the extracted data needs about a gigabyte for each use case.
 For each evolutionary computation (called batch) a data steps file is provided containing data about the elapsed time, the population and the approximation set of each iteration.
 An outcome file contains a summary including more inforation about the approximation set of the last iteration. 
