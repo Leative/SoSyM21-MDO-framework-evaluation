@@ -18,7 +18,7 @@ The successful build was tested with Apache Maven 3.6.3 and Java 11.0.6.
 As the build configuration uses Tycho 2.0.0 newer Java versions (e.g. Java 16) might not allow for a successful build without adaptions.
 
 ## Running experiments in batches ##
-To simplify the execution of a batch of experiments bash script is contained in the main folder. The script was also used to conduct the experiments of the paper.
+To simplify the execution of a batch of experiments a bash script is contained in the main folder. The script was also used to conduct the experiments of the paper.
 To run 30 evolutionary computations for all configurations of the CRA case, for example, a call to the script would look like:
 
 **./experiment-runner.sh "usecases/CRA/target/classes/" "usecases/CRA/configs/" "usecases/CRA/"**
