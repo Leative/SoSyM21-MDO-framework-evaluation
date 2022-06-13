@@ -1,0 +1,10 @@
+*.tcp
+=======
+*.gz
+*.log
+*.aux
+*.out
+*.bbl
+*.blg
+*.tps
+

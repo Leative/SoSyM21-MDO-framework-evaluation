@@ -3,11 +3,8 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.17}
 
-
-\definecolor{red}{RGB}{251, 128, 114}
-\definecolor{bluefill}{RGB}{128, 177, 211}
-\definecolor{greenfill}{RGB}{140, 220, 130} 
-\definecolor{green}{RGB}{60, 190, 60}
+% load common definitions
+\input{../../../definitions}
 
 \begin{document}
 \begin{tikzpicture}
@@ -20,6 +17,7 @@
 		label style={font=\tiny},
 		tick label style={font=\tiny},
 		height=5cm,
+		width=7cm,
     legend columns=1,
 		every axis plot/.append style={thick},
 		line join=bevel,
@@ -31,13 +29,13 @@
 		    },
     		anchor=north}]
 				
-		\addplot[only marks, mark=square*, mark size=0.6pt, line width=0.02pt, blue, fill=bluefill] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SC_NRP_A-cumulative-approx-set.csv};
+		\addplot[only marks, mark=x, blue, fill=bluefill, mark width=\rectWidth, mark height=\rectHeight, line width=0.05pt] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SC_NRP_A-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{SC}}
 		
-		\addplot[only marks, mark=o, mark size=1.0pt, line width=0.3pt, color=red] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/UC_NRP_A-cumulative-approx-set.csv};
+		\addplot[only marks, mark=o, red, mark size=\circleSizeApprox, line width=0.3pt] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/UC_NRP_A-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{UC}}
 		
-		\addplot[only marks, mark=triangle*, mark size=0.8pt, line width=0.02pt, green, fill=greenfill] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SIC_NRP_A-cumulative-approx-set.csv};
+		\addplot[only marks, mark=+, darkgreen, fill=greenfill, mark width=\rectWidth, mark height=\rectHeight, line width=0.05pt] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SIC_NRP_A-cumulative-approx-set.csv};
      \addlegendentry{\scalebox{0.9}{SIC}}
 
 \end{axis}

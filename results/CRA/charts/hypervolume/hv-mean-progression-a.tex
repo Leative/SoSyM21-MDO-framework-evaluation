@@ -3,9 +3,8 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.17}
 
-\definecolor{blue}{RGB}{128, 177, 211}
-\definecolor{red}{RGB}{251, 128, 114}
-\definecolor{green}{RGB}{140, 220, 130}
+% load common definitions
+\input{../../../definitions}
 
 \begin{document}
 \begin{tikzpicture}
@@ -18,9 +17,12 @@
 		label style={font=\tiny},
 		tick label style={font=\tiny},
 		height=5cm,
+		width=7cm,
+		clip=true,
     legend columns=1,
 		every axis plot/.append style={thick},
 		line join=bevel,
+		trim left=4cm,
 		legend style={
 					at={(0.7,0.45)},
 					font=\tiny,
@@ -28,12 +30,18 @@
 		       column sep=2pt,
 		    },
     		anchor=north}]
-	\addplot[color=blue] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/SC_CRA_A-hv-mean-progression.csv};
-		\addlegendentry{\scalebox{0.9}{SC}}
-	\addplot[color=red] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/UC_CRA_A-hv-mean-progression.csv};
-		\addlegendentry{\scalebox{0.9}{UC}}
-	\addplot[color=green] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/SIC_CRA_A-hv-mean-progression.csv};
-      \addlegendentry{\scalebox{0.9}{SIC}}
+				
+	\addplot[bluefill, sc-mark-equi]
+		table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/SC_CRA_A-hv-mean-progression.csv};
+	\addlegendentry{\scalebox{0.9}{SC}}
+	
+	\addplot[redfill, uc-mark-equi]
+		table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/UC_CRA_A-hv-mean-progression.csv};
+	\addlegendentry{\scalebox{0.9}{UC}}
+	
+	\addplot[greenfill, sic-mark-equi]
+		table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/CRA_A/SIC_CRA_A-hv-mean-progression.csv};
+  \addlegendentry{\scalebox{0.9}{SIC}}
 \end{axis}
 \end{tikzpicture}
 \end{document}

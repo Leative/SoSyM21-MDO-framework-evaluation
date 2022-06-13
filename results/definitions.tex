@@ -1,0 +1,70 @@
+%\definecolor{blue}{RGB}{128, 177, 211}
+\definecolor{redfill}{RGB}{251, 128, 114}
+\definecolor{greenfill}{RGB}{140, 220, 130}
+\definecolor{bluefill}{RGB}{128, 177, 211}
+\definecolor{darkgreen}{RGB}{60, 190, 60}
+
+% equiMark specifies a decoration which can be used to add equi-distant markers to a plot
+\usetikzlibrary{decorations.markings}
+\makeatletter
+\tikzset{
+  nomorepostactions/.code={\let\tikz@postactions=\pgfutil@empty},
+  equiMark/.style 2 args={decoration={markings,
+    mark= between positions 0 and 1 step (1/11)*\pgfdecoratedpathlength with{%
+        \tikzset{#2,every mark}\tikz@options
+        \pgftransformresetnontranslations \pgfuseplotmark{#1}%
+      },  
+    },
+    postaction={decorate},
+    /pgfplots/legend image post style={
+        mark=#1,mark options={#2},every path/.append style={nomorepostactions}
+    },
+  },
+}
+\makeatother
+
+% specify custom markers (rotated rectangles)
+\newdimen\pgfplotmarkwidth
+\newdimen\pgfplotmarkheight
+
+\def\pgfsetplotmarkwidth#1{\pgfmathsetlength\pgfplotmarkwidth{#1}}
+\def\pgfsetplotmarkheight#1{\pgfmathsetlength\pgfplotmarkheight{#1}}
+
+\tikzoption{mark width}{\pgfsetplotmarkwidth{#1}}
+\tikzoption{mark height}{\pgfsetplotmarkheight{#1}}
+
+\pgfdeclareplotmark{rectRight}{%
+	\pgftransformrotate{-35}
+  \pgfpathrectangle
+    {\pgfqpoint{-.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
+    {\pgfqpoint{\pgfplotmarkwidth}{\pgfplotmarkheight}}%
+	\pgfpathrectangle
+    {\pgfqpoint{.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
+    {\pgfqpoint{\pgfplotmarkheight}{\pgfplotmarkwidth}}%
+  \pgfusepathqfillstroke
+}
+
+\pgfdeclareplotmark{rectLeft}{%
+	\pgftransformrotate{35}
+  \pgfpathrectangle
+    {\pgfqpoint{-.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
+    {\pgfqpoint{\pgfplotmarkwidth}{\pgfplotmarkheight}}%
+	\pgfpathrectangle
+    {\pgfqpoint{.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
+    {\pgfqpoint{\pgfplotmarkheight}{\pgfplotmarkwidth}}%
+  \pgfusepathqfillstroke
+}
+
+\newcommand\rectHeight{2.8pt}
+\newcommand\rectWidth{1pt}
+\newcommand\circleSize{1.2pt}
+\newcommand\circleSizeApprox{1.6pt}
+
+\tikzset{
+	sc-mark/.style = {mark=x, blue, fill=bluefill, mark size=1pt, line width=0.3pt},
+	sc-mark-equi/.style = {equiMark={x}{sc-mark}},
+	uc-mark/.style = {mark=o, red, mark size=\circleSize, line width=0.3pt},
+	uc-mark-equi/.style = {equiMark={o}{uc-mark}},
+	sic-mark/.style = {mark=+, darkgreen, fill=greenfill, mark size=1.2pt, line width=0.3pt},
+	sic-mark-equi/.style = {equiMark={+}{sic-mark}}
+}

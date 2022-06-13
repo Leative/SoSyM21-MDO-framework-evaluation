@@ -3,11 +3,8 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.17}
 
-
-\definecolor{red}{RGB}{251, 128, 114}
-\definecolor{bluefill}{RGB}{128, 177, 211}
-\definecolor{greenfill}{RGB}{140, 220, 130} 
-\definecolor{green}{RGB}{60, 190, 60}
+% load common definitions
+\input{../../../definitions}
 
 \begin{document}
 \begin{tikzpicture}
@@ -31,13 +28,13 @@
 		    },
     		anchor=north}]
 				
-		\addplot[only marks, mark=square*, mark size=0.6pt, line width=0.02pt, blue, fill=bluefill] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/SC_CRA_C-cumulative-approx-set.csv};
+		\addplot[only marks, sc-mark] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/SC_CRA_C-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{SC}}
 		
-		\addplot[only marks, mark=o, mark size=1.0pt, line width=0.3pt, color=red] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/UC_CRA_C-cumulative-approx-set.csv};
+		\addplot[only marks, uc-mark] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/UC_CRA_C-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{UC}}
 		
-		\addplot[only marks, mark=triangle*, mark size=0.8pt, line width=0.02pt, green, fill=greenfill] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/SIC_CRA_C-cumulative-approx-set.csv};
+		\addplot[only marks, sic-mark] table [x expr=-1*\thisrowno{0}, col sep=space, each nth point=1] {../../analysis/CRA_C/approx-sets/SIC_CRA_C-cumulative-approx-set.csv};
      \addlegendentry{\scalebox{0.9}{SIC}}
 
 \end{axis}
