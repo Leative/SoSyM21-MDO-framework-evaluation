@@ -9,20 +9,11 @@
 \begin{document}
 \begin{tikzpicture}
 \begin{axis}[
-		xmax=190,
-		ylabel shift = -5pt,
-		xlabel shift = -5pt,	
+		axis-commons,
+		xmax=190,			
 		xlabel=Iterations,
 		ylabel=Mean Hypervolume,
-		label style={font=\tiny},
-		tick label style={font=\tiny},
-		height=5cm,
-		width=7cm,
-		clip=true,
-    legend columns=1,
-		every axis plot/.append style={thick},
-		line join=bevel,
-		trim left=4cm,
+		%trim left=4cm,
 		legend style={
 					at={(0.7,0.45)},
 					font=\tiny,

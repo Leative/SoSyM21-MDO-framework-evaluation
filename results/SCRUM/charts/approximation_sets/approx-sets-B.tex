@@ -3,26 +3,16 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.17}
 
-
-\definecolor{red}{RGB}{251, 128, 114}
-\definecolor{bluefill}{RGB}{128, 177, 211}
-\definecolor{greenfill}{RGB}{140, 220, 130} 
-\definecolor{green}{RGB}{60, 190, 60}
+% load common definitions
+\input{../../../definitions}
 
 \begin{document}
 \begin{tikzpicture}
 \begin{axis}[
+		axis-commons,
 		%xmax=0,
-		ylabel shift = -5pt,
-		xlabel shift = -5pt,	
 		xlabel=Customer Importance Deviation,
 		ylabel=Effort Deviation,
-		label style={font=\tiny},
-		tick label style={font=\tiny},
-		height=5cm,
-    legend columns=1,
-		every axis plot/.append style={thick},
-		line join=bevel,
 		legend style={
 					at={(0.8,0.4)},
 					font=\tiny,
@@ -31,13 +21,13 @@
 		    },
     		anchor=north}]
 				
-		\addplot[only marks, mark=square*, mark size=0.6pt, line width=0.02pt, blue, fill=bluefill] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/SC_SCRUM_B-cumulative-approx-set.csv};
+		\addplot[only marks, sc-mark] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/SC_SCRUM_B-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{SC}}
 		
-		\addplot[only marks, mark=o, mark size=1.0pt, line width=0.3pt, color=red] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/UC_SCRUM_B-cumulative-approx-set.csv};
+		\addplot[only marks, uc-mark] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/UC_SCRUM_B-cumulative-approx-set.csv};
 		\addlegendentry{\scalebox{0.9}{UC}}
 		
-		\addplot[only marks, mark=triangle*, mark size=0.8pt, line width=0.02pt, green, fill=greenfill] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/SIC_SCRUM_B-cumulative-approx-set.csv};
+		\addplot[only marks, sic-mark] table [y expr=\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/SCRUM_B/approx-sets/SIC_SCRUM_B-cumulative-approx-set.csv};
      \addlegendentry{\scalebox{0.9}{SIC}}
 
 \end{axis}

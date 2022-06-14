@@ -2,7 +2,7 @@
 \definecolor{redfill}{RGB}{251, 128, 114}
 \definecolor{greenfill}{RGB}{140, 220, 130}
 \definecolor{bluefill}{RGB}{128, 177, 211}
-\definecolor{darkgreen}{RGB}{60, 190, 60}
+\definecolor{darkgreen}{RGB}{0, 120, 0}
 
 % equiMark specifies a decoration which can be used to add equi-distant markers to a plot
 \usetikzlibrary{decorations.markings}
@@ -34,37 +34,59 @@
 \tikzoption{mark height}{\pgfsetplotmarkheight{#1}}
 
 \pgfdeclareplotmark{rectRight}{%
-	\pgftransformrotate{-35}
+	\pgftransformrotate{-33}
   \pgfpathrectangle
     {\pgfqpoint{-.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
     {\pgfqpoint{\pgfplotmarkwidth}{\pgfplotmarkheight}}%
-	\pgfpathrectangle
-    {\pgfqpoint{.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
-    {\pgfqpoint{\pgfplotmarkheight}{\pgfplotmarkwidth}}%
+	\pgfpathmoveto{\pgfpointorigin}
+	\pgfpathmoveto{\pgfqpoint{.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathlineto{\pgfqpoint{1.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathmoveto{\pgfpointorigin}
+	\pgfpathmoveto{\pgfqpoint{-.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathlineto{\pgfqpoint{-1.5\pgfplotmarkwidth}{0pt}}%
   \pgfusepathqfillstroke
 }
 
 \pgfdeclareplotmark{rectLeft}{%
-	\pgftransformrotate{35}
-  \pgfpathrectangle
+	\pgftransformrotate{33}
+    \pgfpathrectangle
     {\pgfqpoint{-.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
     {\pgfqpoint{\pgfplotmarkwidth}{\pgfplotmarkheight}}%
-	\pgfpathrectangle
-    {\pgfqpoint{.5\pgfplotmarkwidth}{-.5\pgfplotmarkheight}}%
-    {\pgfqpoint{\pgfplotmarkheight}{\pgfplotmarkwidth}}%
+	\pgfpathmoveto{\pgfpointorigin}
+	\pgfpathmoveto{\pgfqpoint{.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathlineto{\pgfqpoint{1.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathmoveto{\pgfpointorigin}
+	\pgfpathmoveto{\pgfqpoint{-.5\pgfplotmarkwidth}{0pt}}%
+	\pgfpathlineto{\pgfqpoint{-1.5\pgfplotmarkwidth}{0pt}}%
   \pgfusepathqfillstroke
 }
 
-\newcommand\rectHeight{2.8pt}
+\newcommand\rectHeight{4.4pt}
 \newcommand\rectWidth{1pt}
-\newcommand\circleSize{1.2pt}
-\newcommand\circleSizeApprox{1.6pt}
+%\newcommand\circleSize{1.2pt}
+%\newcommand\circleSizeApprox{1.6pt}
 
 \tikzset{
-	sc-mark/.style = {mark=x, blue, fill=bluefill, mark size=1pt, line width=0.3pt},
-	sc-mark-equi/.style = {equiMark={x}{sc-mark}},
-	uc-mark/.style = {mark=o, red, mark size=\circleSize, line width=0.3pt},
+	sc-mark/.style = {mark=square, mark size=1.6pt, blue, line width=0.4pt},%, fill=bluefill, mark size=1.9pt},
+	sc-mark-equi/.style = {equiMark={square}{sc-mark}},
+	uc-mark/.style = {mark=o, red, mark size=2.9pt, line width=0.6pt},
 	uc-mark-equi/.style = {equiMark={o}{uc-mark}},
-	sic-mark/.style = {mark=+, darkgreen, fill=greenfill, mark size=1.2pt, line width=0.3pt},
-	sic-mark-equi/.style = {equiMark={+}{sic-mark}}
+	sic-mark/.style = {mark=*, mark size=0.8pt, darkgreen, fill=greenfill, line width=0.2pt},
+	sic-mark-equi/.style = {equiMark={*}{sic-mark}},
+}
+
+\pgfplotsset{
+	axis-commons/.style = {
+		/pgf/number format/1000 sep={},
+		ylabel shift = -5pt,
+		xlabel shift = -5pt,	
+		label style={font=\tiny},
+		tick label style={font=\tiny},
+		max space between ticks=1000pt,
+    try min ticks=5,
+		height=6cm,
+		width=8cm,
+    legend columns=1,
+		every axis plot/.append style={thick},
+		line join=bevel,}
 }
