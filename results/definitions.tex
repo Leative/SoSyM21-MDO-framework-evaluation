@@ -1,8 +1,8 @@
 %\definecolor{blue}{RGB}{128, 177, 211}
 \definecolor{redfill}{RGB}{251, 128, 114}
-\definecolor{greenfill}{RGB}{140, 220, 130}
+\definecolor{greenfill}{RGB}{160, 230, 150}
 \definecolor{bluefill}{RGB}{128, 177, 211}
-\definecolor{darkgreen}{RGB}{0, 120, 0}
+\definecolor{darkgreen}{RGB}{140, 220, 130}
 
 % equiMark specifies a decoration which can be used to add equi-distant markers to a plot
 \usetikzlibrary{decorations.markings}
@@ -10,7 +10,7 @@
 \tikzset{
   nomorepostactions/.code={\let\tikz@postactions=\pgfutil@empty},
   equiMark/.style 2 args={decoration={markings,
-    mark= between positions 0 and 1 step (1/11)*\pgfdecoratedpathlength with{%
+    mark= between positions 0 and 1 step (1/5)*\pgfdecoratedpathlength with{%
         \tikzset{#2,every mark}\tikz@options
         \pgftransformresetnontranslations \pgfuseplotmark{#1}%
       },  
@@ -61,6 +61,21 @@
   \pgfusepathqfillstroke
 }
 
+\pgfdeclareplotmark{circPlus}{%
+  \pgfpathcircle{\pgfpointorigin}{\pgfplotmarksize}%
+	%\pgfsetfillcolor{greenfill}
+	\pgfpathmoveto{\pgfqpoint{-1.75\pgfplotmarksize}{0pt}}%
+	\pgfpathlineto{\pgfqpoint{1.75\pgfplotmarksize}{0pt}}%
+	\pgfpathmoveto{\pgfqpoint{0pt}{-1.75\pgfplotmarksize}}%
+	\pgfpathlineto{\pgfqpoint{0pt}{1.75\pgfplotmarksize}}%
+	\pgfusepathqfillstroke%
+	%\pgfpathmoveto{\pgfpointorigin}
+	%\pgfpathrectangle{\pgfqpoint{-0.25\pgfplotmarksize}{2\pgfplotmarksize}}{\pgfqpoint{0.5\pgfplotmarksize}{-4\pgfplotmarksize}}%
+	%\pgfsetfillcolor{white}
+	%\pgfpathmoveto{\pgfpointorigin}
+	%\pgfpathrectangle{\pgfqpoint{-0.1pt}{-2.0\pgfplotmarksize}}{\pgfqpoint{0.1pt}{2.0\pgfplotmarksize}}%
+}
+
 \newcommand\rectHeight{4.4pt}
 \newcommand\rectWidth{1pt}
 %\newcommand\circleSize{1.2pt}
@@ -71,8 +86,8 @@
 	sc-mark-equi/.style = {equiMark={square}{sc-mark}},
 	uc-mark/.style = {mark=o, red, mark size=2.9pt, line width=0.6pt},
 	uc-mark-equi/.style = {equiMark={o}{uc-mark}},
-	sic-mark/.style = {mark=*, mark size=0.8pt, darkgreen, fill=greenfill, line width=0.2pt},
-	sic-mark-equi/.style = {equiMark={*}{sic-mark}},
+	sic-mark/.style = {mark=x, mark size=1.8pt, darkgreen, line width=0.6pt},
+	sic-mark-equi/.style = {equiMark={x}{sic-mark}},
 }
 
 \pgfplotsset{
