@@ -64,7 +64,7 @@ fi
 
 # As fourth param specify number of batches which will be run in parallel
 if [ "$4" -gt 0 ]; then
-	BATCH_NUMBER=(("$4"-1))
+	BATCH_NUMBER=$(("$4"-1))
 	echo "$BATCH_NUMBER batches will be performed"
 else
 	echo "Invalid batch number"
