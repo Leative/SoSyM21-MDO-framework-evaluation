@@ -5,15 +5,13 @@
 # estimated_time is optional and needs to be specified in following format: DD-HH:MM:SS. Defaults to one day.
 
 # Prepare variables passed as environment to the hpc scheduler
-export EST_TIME
-export BATCH_NUMBER
 export CLASSPATH_ADDITION
 export CONFIG
 export PROJECT_DIR
 
 # Be aware of os specific path separators in classpath (: Linux, ; Windows/Mac)
 execute_single_config () {
-	sbatch --export=EST_TIME,CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,BATCH_NUMBER single-config-multi-batches-job.slurm
+	sbatch --time=$EST_TIME --array=0..$BATCH_NUMBER --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR single-config-multi-batches-job.slurm
 }
 
 # Three parameters: classpath, configuration list, project dir, model (optional)
