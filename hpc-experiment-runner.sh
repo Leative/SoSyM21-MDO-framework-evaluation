@@ -1,16 +1,19 @@
 #!/bin/bash
 
-#execution: ./experiment-runner.sh path_to_classes path_to_config project_path
+# execution: ./hpc-experiment-runner.sh path_to_classes path_to_config project_path number_of_batches estimated_time
+# number_of_batches is just an integer. For each config a job array will be created executing the desired number_of_batches in parallel on separate cpus.
+# estimated_time is optional and needs to be specified in following format: DD-HH:MM:SS. Defaults to one day.
 
 # Prepare variables passed as environment to the hpc scheduler
-export CLASSPATH_ADDITION=""
-export CONFIG=""
-export PROJECT_DIR=""
-export BATCH_NUMBER=0
+export EST_TIME
+export BATCH_NUMBER
+export CLASSPATH_ADDITION
+export CONFIG
+export PROJECT_DIR
 
 # Be aware of os specific path separators in classpath (: Linux, ; Windows/Mac)
 execute_single_config () {
-	sbatch --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,BATCH_NUMBER single-config-multi-batches-job.slurm
+	sbatch --export=EST_TIME,CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,BATCH_NUMBER single-config-multi-batches-job.slurm
 }
 
 # Three parameters: classpath, configuration list, project dir, model (optional)
@@ -33,14 +36,6 @@ CLASSPATH_ADDITION="$1"
 
 # Specify a single configuration file or a directory containing configuration files.
 # In case of a directory, configurations inside subdirectories will not be considered.
-if [ "$2" -gt 0 ]; then
-	BATCH_NUMBER="$2"
-	echo "$BATCH_NUMBER batches will be performed"
-else
-	echo "Invalid batch number"
-	exit 1
-fi	
-
 if [ -f "$2" ]; then
 	echo "Single configuration file will be executed"
 	CONFIGS="$2"
@@ -72,14 +67,22 @@ else
 	exit 1
 fi
 
-# As fourth param specify a file containing a list of models which should be optimized
-# execute_all_configs() will adapt the currently run config automatically
-if [ -f "$4" ]; then
-	MODEL_LIST=$(cat "$4");
-	for model in $MODEL_LIST
-	do
-		execute_all_configs "$CLASSPATH_ADDITION" "$CONFIGS" "$PROJECT_DIR" "$model"
-	done
+# As fourth param specify number of batches which will be run in parallel
+if [ "$4" -gt 0 ]; then
+	BATCH_NUMBER="$4"
+	echo "$BATCH_NUMBER batches will be performed"
 else
-	execute_all_configs "$CLASSPATH_ADDITION" "$CONFIGS" "$PROJECT_DIR"
-fi
+	echo "Invalid batch number"
+	exit 1
+fi	
+
+# As fifth param an estimated maximum execution time for each batch can be specified.
+# Lower values might allow faster scheduling and shorter waiting times.
+#!/bin/bash
+if [ ! -z "$5" ]; then
+	EST_TIME="$5"
+	echo "$EST_TIME is set as maximum execution time."
+else
+	EST_TIME="01-00:00:00"
+	echo "No execution time specified. Defaulting to $EST_TIME"
+fi	
