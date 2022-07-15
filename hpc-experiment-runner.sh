@@ -21,9 +21,6 @@ execute_all_configs () {
 	for CONFIG in ${CONFIGS[@]}
 	do
 		[ -e "$CONFIG" ] || continue
-		if [ ! -z "$model" ]; then
-			sed -i 's/model <.*xmi>/model <'"$model"'>/g' "$CONFIG"
-		fi
 		echo "Executing $CONFIG"
 		execute_single_config "$CLASSPATH_ADDITION" "$CONFIG" "$PROJECT_DIR"
 	done
@@ -40,7 +37,7 @@ if [ -f "$2" ]; then
 	echo "Single configuration file will be executed"
 	CONFIGS="$2"
 elif [ -d "$2" ]; then
-	echo "All configs in the specified directory will be executed"
+	echo "All configs in the specified directory will be executed:"
 	CONFIGS=()
 	for path in "$2"/*
 	do
@@ -86,3 +83,5 @@ else
 	EST_TIME="01-00:00:00"
 	echo "No execution time specified. Defaulting to $EST_TIME"
 fi	
+
+execute_all_configs

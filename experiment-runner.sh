@@ -1,10 +1,11 @@
 #!/bin/bash
 
-#execution: ./experiment-runner.sh path_to_classes path_to_config project_path
+#execution: ./experiment-runner.sh path_to_classes path_to_config project_path model_list_file
+# model_list_file is an optional argument
 
 # Be aware of os specific path separators in classpath (: Linux, ; Windows/Mac)
 execute_single_config () {
-	for i in {0..29}
+	for i in {0..0}
 	do
 		java -Xmx8192m -cp "$CLASSPATH_ADDITION;./MDEOptimiser/*" uk.ac.kcl.inf.mdeoptimiser.interfaces.cli.Run -m "$2" -p "$3" -b "$i"
 	done
@@ -66,8 +67,8 @@ if [ -f "$4" ]; then
 	MODEL_LIST=$(cat "$4");
 	for model in $MODEL_LIST
 	do
-		execute_all_configs "$CLASSPATH_ADDITION" "$CONFIGS" "$PROJECT_DIR" "$model"
+		execute_all_configs
 	done
 else
-	execute_all_configs "$CLASSPATH_ADDITION" "$CONFIGS" "$PROJECT_DIR"
+	execute_all_configs
 fi
