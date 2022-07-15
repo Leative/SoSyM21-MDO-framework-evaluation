@@ -17,7 +17,9 @@ search {
 }
 solver {
 	optimisation provider moea algorithm PESA2 {
-		population: 100
+		population: 10
+		archive.size: 100
+		bisections: 5
 		variation: mutation
 		mutation.step: 1
 		mutation.strategy: random
