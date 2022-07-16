@@ -16,10 +16,8 @@ search {
 	mutate using <cra-mutation.henshin> unit "deleteEmptyClass"
 }
 solver {
-	optimisation provider moea algorithm PESA2 {
+	optimisation provider moea algorithm SPEA2 {
 		population: 100
-		archive.size: 100
-		bisections: 5
 		variation: mutation
 		mutation.step: 1
 		mutation.strategy: random
