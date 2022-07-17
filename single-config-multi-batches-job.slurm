@@ -3,7 +3,6 @@
 #SBATCH --mem-per-cpu=8200
 #SBATCH --mail-user=stefan.john@uni-marburg.de
 #SBATCH --mail-type=END
-#SBATCH --output=job-execution.log
 
 module purge
 
