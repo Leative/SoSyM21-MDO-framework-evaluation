@@ -12,8 +12,9 @@ export PROJECT_DIR
 # Be aware of os specific path separators in classpath (: Linux, ; Windows/Mac)
 execute_single_config () {
 	CONFIGDIR=$(dirname $CONFIG)
-	JOB_ID=${CONFIGDIR##*/}${CONFIG##*/}
-	sbatch --time=$EST_TIME --array=0-$BATCH_NUMBER --job=$JOB_ID --output=slurmlogs/$JOB_ID_%A/%a.out --error=slurmlogs/$JOB_ID_%A/%a.error --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,JOB_ID single-config-multi-batches-job.slurm
+	JOB_ID=${CONFIGDIR##*/}/${CONFIG##*/}
+	mkdir/slurmlogs/$JOB_ID
+	sbatch --time=$EST_TIME --array=0-$BATCH_NUMBER --job=$JOB_ID --output=slurmlogs/$JOB_ID/%A_%a.out --error=slurmlogs/$JOB_ID/%A_%a.error --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,JOB_ID single-config-multi-batches-job.slurm
 }
 
 # Three parameters: classpath, configuration list, project dir, model (optional)
@@ -67,7 +68,7 @@ fi
 # As fourth param specify number of batches which will be run in parallel
 if [ "$4" -gt 0 ]; then
 	BATCH_NUMBER=$(("$4"-1))
-	echo "$BATCH_NUMBER batches will be performed"
+	echo "$4 batches will be performed"
 else
 	echo "Invalid batch number"
 	exit 1
