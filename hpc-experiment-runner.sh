@@ -12,8 +12,8 @@ export PROJECT_DIR
 # Be aware of os specific path separators in classpath (: Linux, ; Windows/Mac)
 execute_single_config () {
 	CONFIGDIR=$(dirname $CONFIG)
-	JOB_ID=${CONFIGDIR##*/}/${CONFIG##*/}
-	mkdir/slurmlogs/$JOB_ID
+	JOB_ID="${CONFIGDIR##*/}_${CONFIG##*/}"
+	mkdir slurmlogs/$JOB_ID
 	sbatch --time=$EST_TIME --array=0-$BATCH_NUMBER --job=$JOB_ID --output=slurmlogs/$JOB_ID/%A_%a.out --error=slurmlogs/$JOB_ID/%A_%a.error --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,JOB_ID single-config-multi-batches-job.slurm
 }
 
