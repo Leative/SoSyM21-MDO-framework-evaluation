@@ -13,7 +13,7 @@ export PROJECT_DIR
 execute_single_config () {
 	CONFIGDIR=$(dirname $CONFIG)
 	JOB_ID=${CONFIGDIR##*/}${CONFIG##*/}
-	sbatch --time=$EST_TIME --array=0-$BATCH_NUMBER --job=$JOB_ID --output=slurmlogs/%A_%a_$JOB_ID.out --error=slurmlogs/%A_%a_$JOB_ID.error --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,JOB_ID single-config-multi-batches-job.slurm
+	sbatch --time=$EST_TIME --array=0-$BATCH_NUMBER --job=$JOB_ID --output=slurmlogs/$JOB_ID_%A/%a.out --error=slurmlogs/$JOB_ID_%A/%a.error --export=CLASSPATH_ADDITION,CONFIG,PROJECT_DIR,JOB_ID single-config-multi-batches-job.slurm
 }
 
 # Three parameters: classpath, configuration list, project dir, model (optional)
