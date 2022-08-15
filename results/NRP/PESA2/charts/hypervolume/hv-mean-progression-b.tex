@@ -1,0 +1,33 @@
+\documentclass[]{standalone}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+% load common definitions
+\input{../../../../definitions}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+		axis-commons,
+		xmax=680,
+		xlabel=Iterations,
+		ylabel=Mean Hypervolume,
+		legend style={
+					at={(0.7,0.45)},
+					font=\tiny,
+					/tikz/column 2/.style={
+		       column sep=2pt,
+		    },
+    		anchor=north}]
+
+	\addplot[bluefill, sc-mark-equi] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/NRP_B/SC_NRP_B-hv-mean-progression.csv};
+		\addlegendentry{\scalebox{0.9}{SC}}
+	\addplot[redfill, uc-mark-equi] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/NRP_B/UC_NRP_B-hv-mean-progression.csv};
+		\addlegendentry{\scalebox{0.9}{UC}}
+	\addplot[greenfill, sic-mark-equi] table [x expr=\thisrowno{0}, col sep=comma, each nth point=1] {../../analysis/NRP_B/SIC_NRP_B-hv-mean-progression.csv};
+      \addlegendentry{\scalebox{0.9}{SIC}}
+			
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[]{standalone}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+% load common definitions
+\input{../../../../definitions}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+		xmin=0,
+		xmax=1140,
+		axis-commons,		
+		xlabel=Costs,
+		ylabel=Satisfaction,
+		legend style={
+					at={(0.85,0.35)},
+					font=\tiny,
+					/tikz/column 2/.style={
+		       column sep=2pt,
+		    },
+    		anchor=north}]
+				
+		\addplot[only marks, sc-mark] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SC_NRP_A-cumulative-approx-set.csv};
+		\addlegendentry{\scalebox{0.9}{SC}}
+		
+		\addplot[only marks, uc-mark] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/UC_NRP_A-cumulative-approx-set.csv};
+		\addlegendentry{\scalebox{0.9}{UC}}
+		
+		\addplot[only marks, sic-mark] table [y expr=-1*\thisrowno{1}, col sep=space, each nth point=1] {../../analysis/NRP_A/approx-sets/SIC_NRP_A-cumulative-approx-set.csv};
+    \addlegendentry{\scalebox{0.9}{SIC}}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

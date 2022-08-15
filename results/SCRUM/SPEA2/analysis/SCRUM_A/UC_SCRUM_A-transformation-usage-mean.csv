@@ -1,0 +1,6 @@
+row,values
+[addUnassignedWorkItemToExSprint],0.41285058717597506
+[addUnassignedWorkItemToNewSprint],0.15997537561029238
+[deleteEmptySprint],0.022929734399225694
+[moveWorkItemToExSprint],0.3965818727464854
+[moveWorkItemToNewSprint],0.007662430068021561
