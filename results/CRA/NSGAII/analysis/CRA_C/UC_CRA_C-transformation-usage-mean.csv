@@ -1,0 +1,5 @@
+row,values
+[addFeatureToExClass],0.5351066789151253
+[addFeatureToNewClass],0.3777519484497215
+[deleteEmptyClass],0.026574711811643677
+[removeFeatureFromExClass],0.0605666608235095

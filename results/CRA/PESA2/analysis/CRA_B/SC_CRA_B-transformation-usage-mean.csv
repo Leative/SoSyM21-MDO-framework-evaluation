@@ -1,6 +1,6 @@
 row,values
-[addUnassignedFeatureToExClass],0.29429510381882057
-[addUnassignedFeatureToNewClass],0.1542876894936384
+[addUnassignedFeatureToExClass],0.2942951038188207
+[addUnassignedFeatureToNewClass],0.15428768949363839
 [deleteEmptyClass],0.1242243765834737
 [moveFeatureToExClass],0.31806591791315586
-[moveFeatureToNewClass],0.10912691219091128
+[moveFeatureToNewClass],0.10912691219091127

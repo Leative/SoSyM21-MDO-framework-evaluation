@@ -2,5 +2,5 @@ row,values
 [addUnassignedFeatureToExClass],0.4268256245818166
 [addUnassignedFeatureToNewClass],0.18947308831519352
 [deleteEmptyClass],0.09075285862514963
-[moveFeatureToExClass],0.22578595054756048
+[moveFeatureToExClass],0.22578595054756045
 [moveFeatureToNewClass],0.0671624779302798
