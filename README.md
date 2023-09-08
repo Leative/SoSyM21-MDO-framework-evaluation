@@ -1,3 +1,6 @@
+# Update
+This repo started as the artifact repo for the 2021 submission to SoSym. After a major revision has been issued the repo was used to continue and extend the experiments towards considering multiple evolutionary algorithms. The artifacts for the final submission in 2022 are located in a separate repository. However, the extended-Branch of this repo also contains the files needed to execute experiments on the high-performance cluster and contains additional results for CRA case and PESA2 with a lower population size.
+
 # SoSyM21-MDO-framework-evaluation
 Artifacts for a paper submitted to SoSyM.
 
